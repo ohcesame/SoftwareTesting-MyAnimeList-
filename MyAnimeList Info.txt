@@ -1,0 +1,5 @@
+- Website title: MyAnimeList
+- Website link: https://myanimelist.net/
+- Trello link: https://trello.com/b/MxUo5YSa/qa-capstone
+- Google Drive link: https://drive.google.com/drive/folders/1iCVbLmGBo37MrOT-DN2DFD2WqCLTR1sL?usp=share_link
+- List of tests conducted: Manual, API, Automation

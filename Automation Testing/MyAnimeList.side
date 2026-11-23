@@ -1,0 +1,5289 @@
+{
+  "id": "afe1b8d0-0cea-44ef-be0a-8f1534715cba",
+  "version": "2.0",
+  "name": "MyAnimeList",
+  "url": "https://myanimelist.net",
+  "tests": [{
+    "id": "43d46987-6853-491c-a5af-321ac42e3315",
+    "name": "1.1 Register - Valid Input Succes",
+    "commands": [{
+      "id": "26ddfad3-62e5-4d17-8d3d-ae83aa4571fa",
+      "comment": "",
+      "command": "open",
+      "target": "https://myanimelist.net/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ba99c85-d8c1-4324-877d-61e7e8c50c5a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2b4585d-cb53-4052-80a9-8ab6fa9e376d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign Up",
+      "targets": [
+        ["linkText=Sign Up", "linkText"],
+        ["css=.btn-signup", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign Up')]", "xpath:link"],
+        ["xpath=//a[@onclick='ga_registration()']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/register.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3aafb41-70b6-4a22-ad38-11f261c1a422",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginEmail",
+      "targets": [
+        ["id=loginEmail", "id"],
+        ["name=email", "name"],
+        ["css=#loginEmail", "css:finder"],
+        ["xpath=//input[@id='loginEmail']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b537ffbe-ee04-487e-a481-c111cca96422",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginEmail",
+      "targets": [
+        ["id=loginEmail", "id"],
+        ["name=email", "name"],
+        ["css=#loginEmail", "css:finder"],
+        ["xpath=//input[@id='loginEmail']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testfenderyo00@gmail.com"
+    }, {
+      "id": "f03e8d39-1658-498c-9b9e-dad4e8e485f0",
+      "comment": "",
+      "command": "click",
+      "target": "name=user_name",
+      "targets": [
+        ["name=user_name", "name"],
+        ["css=.password_checker_user_name", "css:finder"],
+        ["xpath=//input[@name='user_name']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b16db6ca-98df-4fd1-b71e-05f17028816a",
+      "comment": "",
+      "command": "type",
+      "target": "name=user_name",
+      "targets": [
+        ["name=user_name", "name"],
+        ["css=.password_checker_user_name", "css:finder"],
+        ["xpath=//input[@name='user_name']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "fenderyamaha00"
+    }, {
+      "id": "82f4b032-5d78-49ea-b379-9de636dc1fcc",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4c1ffbf-eca7-4a98-aabb-a272ec7ce9db",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b7099fc-741a-4d7c-b94f-df22288854f2",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Forever21"
+    }, {
+      "id": "f82724fc-b457-4337-98b2-83fa77444344",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[month]",
+      "targets": [
+        ["name=birthday[month]", "name"],
+        ["css=.login-selectbox:nth-child(1)", "css:finder"],
+        ["xpath=//select[@name='birthday[month]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35e41462-a715-452b-bf5e-0edb18bb7600",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[month]",
+      "targets": [],
+      "value": "label=Jul"
+    }, {
+      "id": "e8e3bc5d-0c8e-4c2a-b249-659b0f2cea86",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[day]",
+      "targets": [
+        ["name=birthday[day]", "name"],
+        ["css=.login-selectbox:nth-child(2)", "css:finder"],
+        ["xpath=//select[@name='birthday[day]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select[2]", "xpath:idRelative"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8592e29-03af-41a7-9c04-e7d6017f5195",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[day]",
+      "targets": [],
+      "value": "label=8"
+    }, {
+      "id": "175762ae-300d-4561-a4ab-cebcce855a59",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[year]",
+      "targets": [
+        ["name=birthday[year]", "name"],
+        ["css=.login-selectbox:nth-child(3)", "css:finder"],
+        ["xpath=//select[@name='birthday[year]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select[3]", "xpath:idRelative"],
+        ["xpath=//select[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c543c07-0411-4da7-9b77-735e686ba96d",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[year]",
+      "targets": [],
+      "value": "label=2000"
+    }, {
+      "id": "b8a79bcc-ae0b-456d-93f6-7bf7d3fbaa1d",
+      "comment": "",
+      "command": "//click",
+      "target": "id=create-account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "424f31a6-29af-4be6-ac6c-cc448effe89d",
+      "comment": "",
+      "command": "//assertText",
+      "target": "id=ga_goodresult",
+      "targets": [],
+      "value": "You will receive an e-mail shortly with instructions detailing how to finish your registration.\\nPlease check your junk mail and allow e-mails from no-reply@myanimelist.net"
+    }]
+  }, {
+    "id": "0abb9be5-7bf2-4920-a40c-f846d7e0ec22",
+    "name": "1.2 Register - Empty Value Input ",
+    "commands": [{
+      "id": "04e1a983-aea3-474d-9ee8-c0d7982d1c81",
+      "comment": "",
+      "command": "open",
+      "target": "https://myanimelist.net/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5856e2cc-65a2-47d2-8560-73df4103ad00",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d810a40-37a2-4a67-ba9f-c36e10cdfc09",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign Up",
+      "targets": [
+        ["linkText=Sign Up", "linkText"],
+        ["css=.btn-signup", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign Up')]", "xpath:link"],
+        ["xpath=//a[@onclick='ga_registration()']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/register.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e1c5961-1550-4745-a112-459dc512aac1",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginEmail",
+      "targets": [
+        ["id=loginEmail", "id"],
+        ["name=email", "name"],
+        ["css=#loginEmail", "css:finder"],
+        ["xpath=//input[@id='loginEmail']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e48becb4-4da2-45ff-aee4-ab72c9ac8ed2",
+      "comment": "",
+      "command": "click",
+      "target": "name=user_name",
+      "targets": [
+        ["name=user_name", "name"],
+        ["css=.password_checker_user_name", "css:finder"],
+        ["xpath=//input[@name='user_name']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbb77f16-b862-4df7-bb0b-ace371474481",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18362765-e6f4-46cf-ad2b-9b102ba1d429",
+      "comment": "",
+      "command": "click",
+      "target": "name=user_name",
+      "targets": [
+        ["name=user_name", "name"],
+        ["css=.password_checker_user_name", "css:finder"],
+        ["xpath=//input[@name='user_name']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf6e506a-05e9-49b5-b244-ad829c7a02db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.email_checker_result",
+      "targets": [
+        ["css=.email_checker_result", "css:finder"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f657293-7cf8-4b13-8f41-bb4903e9fcaf",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.email_checker_result_text",
+      "targets": [
+        ["css=.email_checker_result_text", "css:finder"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Please enter your email.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your email."
+    }, {
+      "id": "3bcafd29-be28-4fe3-842a-9cc081386760",
+      "comment": "",
+      "command": "click",
+      "target": "css=.username_checker_result",
+      "targets": [
+        ["css=.username_checker_result", "css:finder"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78a5327e-f027-4078-b02b-e3639c798b50",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.username_checker_result_text",
+      "targets": [
+        ["css=.username_checker_result_text", "css:finder"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[2]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Please enter your username.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your username."
+    }, {
+      "id": "cfef85b4-b496-4225-87b8-6b3bd2e8df84",
+      "comment": "",
+      "command": "click",
+      "target": "css=.password_checker_result_text",
+      "targets": [
+        ["css=.password_checker_result_text", "css:finder"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[3]/p/span", "xpath:idRelative"],
+        ["xpath=//p/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Please enter your password.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7731048-8d04-4fa0-80ca-fceee14c5bd5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.password_checker_result",
+      "targets": [
+        ["css=.password_checker_result", "css:finder"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Please enter your password.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5883ce0c-3771-4671-befe-cbb746db3518",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.password_checker_result_text",
+      "targets": [
+        ["css=.password_checker_result_text", "css:finder"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[3]/p/span", "xpath:idRelative"],
+        ["xpath=//p/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Please enter your password.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your password."
+    }]
+  }, {
+    "id": "e8fb378c-17ca-4e23-aeb7-eb115ff1da19",
+    "name": "1.7 Register - Password Encrypted",
+    "commands": [{
+      "id": "122404de-6e07-400d-a9c6-8fc52d5145cd",
+      "comment": "",
+      "command": "open",
+      "target": "https://myanimelist.net/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e617710e-e967-4568-9f9c-53bf993bd0de",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3f9c589-f21f-40fc-aba5-1a1e0ad6cec1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign Up",
+      "targets": [
+        ["linkText=Sign Up", "linkText"],
+        ["css=.btn-signup", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign Up')]", "xpath:link"],
+        ["xpath=//a[@onclick='ga_registration()']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/register.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f80fe4bf-8ab2-4cac-96e6-0d9f47f20881",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bad23bb6-566a-45aa-bedb-c8066756931f",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Password123!@"
+    }, {
+      "id": "562558f3-fcf9-4a02-9440-a2bf7dddae67",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login-input-with-text",
+      "targets": [
+        ["css=.login-input-with-text", "css:finder"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div", "xpath:idRelative"],
+        ["xpath=//fieldset/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "83824f52-1e58-4e9b-a56d-4d00e9c70ba2",
+    "name": "1.8 Register - Password Encrypted with Show Password Checkbox",
+    "commands": [{
+      "id": "24e4c62a-ed12-4f6e-aab4-abdda01422d8",
+      "comment": "",
+      "command": "open",
+      "target": "https://myanimelist.net/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90ced836-7658-4cfa-8f7b-40174657bc08",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0d00280-31fd-4d00-a7ec-5b6cb4ffae0d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign Up",
+      "targets": [
+        ["linkText=Sign Up", "linkText"],
+        ["css=.btn-signup", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign Up')]", "xpath:link"],
+        ["xpath=//a[@onclick='ga_registration()']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/register.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fec406c6-0fc0-46ce-80bd-77e093223f02",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a221fa2-6639-42ed-8a1d-0a7f222a7269",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Password123!@"
+    }, {
+      "id": "0ccd0e0e-f4f2-427d-af90-c7b4732113d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pt16:nth-child(4) > .di-b",
+      "targets": [
+        ["css=.pt16:nth-child(4) > .di-b", "css:finder"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/label", "xpath:idRelative"],
+        ["xpath=//fieldset/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Birthday')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d63e223b-1e08-4b1a-9640-794a93a75ea9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fl-r",
+      "targets": [
+        ["css=.fl-r", "css:finder"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[3]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Show Password')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "69d44d9c-13b6-4104-968c-02155d037005",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fl-r",
+      "targets": [
+        ["css=.fl-r", "css:finder"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[3]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Show Password')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "94abcd73-1982-47d8-8846-1b32695b1fac",
+      "comment": "",
+      "command": "click",
+      "target": "id=show-password",
+      "targets": [
+        ["id=show-password", "id"],
+        ["css=#show-password", "css:finder"],
+        ["xpath=//input[@id='show-password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[3]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c63c6aee-89d4-4963-9163-df140f42b79d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login-input-with-text",
+      "targets": [
+        ["css=.login-input-with-text", "css:finder"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div", "xpath:idRelative"],
+        ["xpath=//fieldset/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "369032ca-b91c-4eb3-802a-6e7f78fa3263",
+    "name": "1.3 Register - Invalid Email",
+    "commands": [{
+      "id": "a0164952-1497-40a9-a51e-757f5e29d602",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76447773-c463-480f-9b84-c4934697f06e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "769bfd74-681f-471a-8cd7-b04ce1d1dd9b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign Up",
+      "targets": [
+        ["linkText=Sign Up", "linkText"],
+        ["css=.btn-signup", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign Up')]", "xpath:link"],
+        ["xpath=//a[@onclick='ga_registration()']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/register.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74bbcd00-e2e1-409d-8c79-46cef92b1784",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginEmail",
+      "targets": [
+        ["id=loginEmail", "id"],
+        ["name=email", "name"],
+        ["css=#loginEmail", "css:finder"],
+        ["xpath=//input[@id='loginEmail']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e359cf90-10d7-4a0a-a2a7-85425caf10e3",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginEmail",
+      "targets": [
+        ["id=loginEmail", "id"],
+        ["name=email", "name"],
+        ["css=#loginEmail", "css:finder"],
+        ["xpath=//input[@id='loginEmail']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "fenderyamaha.net"
+    }, {
+      "id": "8e45f816-2e54-41a1-b104-264c01f3100f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-form",
+      "targets": [
+        ["css=.recaptcha-form", "css:finder"],
+        ["xpath=//form[@action='https://myanimelist.net/register.php?from=%2F']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbaf522b-5f4e-4959-81f8-f5a6f549a793",
+      "comment": "",
+      "command": "//assertText",
+      "target": "css=.email_checker_result_text",
+      "targets": [],
+      "value": "Please enter a valid e-mail address."
+    }]
+  }, {
+    "id": "27eb5ad9-43ba-4150-9526-6e659f321241",
+    "name": "1.16 Register - Navigate to Sign Up from Login Page",
+    "commands": [{
+      "id": "7a3175d4-d66c-4c24-9095-b5f0f56ccc67",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9614bd05-38c0-44a7-914d-3df09d901c35",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4c35944-47a9-416d-849c-b47dd67ac4a2",
+      "comment": "",
+      "command": "click",
+      "target": "id=malLogin",
+      "targets": [
+        ["id=malLogin", "id"],
+        ["linkText=Login", "linkText"],
+        ["css=.header-menu-login > #malLogin", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[@id='malLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/login.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "46311a05-8fa2-4582-b1a5-e4a75828e6e6",
+      "comment": "",
+      "command": "click",
+      "target": "name=register",
+      "targets": [
+        ["name=register", "name"],
+        ["css=.pt24 > .inputButton", "css:finder"],
+        ["xpath=//input[@name='register']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[8]/input", "xpath:idRelative"],
+        ["xpath=//p[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19c5634e-558f-459d-8133-d9576c9ba393",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Sign Up - MyAnimeList.net",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b2a8c8e6-6634-4358-a74e-70fc6655ec8e",
+    "name": "1.5 Register - Invalid Username",
+    "commands": [{
+      "id": "a33d6be1-9a6a-4600-ac2a-9c3c3b2888e6",
+      "comment": "",
+      "command": "open",
+      "target": "https://myanimelist.net/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "204bd086-82c3-401b-84c3-33e81f28f1cc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfdea12b-5a7a-45bd-a039-78bace4d1635",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign Up",
+      "targets": [
+        ["linkText=Sign Up", "linkText"],
+        ["css=.btn-signup", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign Up')]", "xpath:link"],
+        ["xpath=//a[@onclick='ga_registration()']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/register.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac14b13b-b28d-4245-a700-0257b3fcbb65",
+      "comment": "",
+      "command": "click",
+      "target": "name=user_name",
+      "targets": [
+        ["name=user_name", "name"],
+        ["css=.password_checker_user_name", "css:finder"],
+        ["xpath=//input[@name='user_name']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5a2d174-6ac0-4e93-9485-53abf0850c6b",
+      "comment": "",
+      "command": "type",
+      "target": "name=user_name",
+      "targets": [
+        ["name=user_name", "name"],
+        ["css=.password_checker_user_name", "css:finder"],
+        ["xpath=//input[@name='user_name']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "fender123@!$$$$"
+    }, {
+      "id": "c8170022-572e-4e3b-b579-c9dddc623975",
+      "comment": "",
+      "command": "click",
+      "target": "css=.username_checker_result",
+      "targets": [
+        ["css=.username_checker_result", "css:finder"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1607a21-494c-46de-a27f-6b3da2db95dd",
+      "comment": "",
+      "command": "//assertText",
+      "target": "css=.username_checker_result_text",
+      "targets": [],
+      "value": "Please enter a valid username (letters, numbers, underscores and dashes only)."
+    }]
+  }, {
+    "id": "9ef5a806-2f95-43c3-ae96-b2e73dacd65b",
+    "name": "1.4 Register - Existing Email",
+    "commands": [{
+      "id": "942d8e48-5352-4ae1-8001-0c2d1b047183",
+      "comment": "",
+      "command": "open",
+      "target": "https://myanimelist.net/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26568263-2b5c-41c3-915d-967b555c9068",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe0912a1-96a7-4aff-8dc0-096e3c4d7618",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign Up",
+      "targets": [
+        ["linkText=Sign Up", "linkText"],
+        ["css=.btn-signup", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign Up')]", "xpath:link"],
+        ["xpath=//a[@onclick='ga_registration()']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/register.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "64112d5b-ae90-4123-9708-cd49201f5742",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginEmail",
+      "targets": [
+        ["id=loginEmail", "id"],
+        ["name=email", "name"],
+        ["css=#loginEmail", "css:finder"],
+        ["xpath=//input[@id='loginEmail']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52870c51-bbdf-47b1-84ab-8016adccbe54",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginEmail",
+      "targets": [
+        ["id=loginEmail", "id"],
+        ["name=email", "name"],
+        ["css=#loginEmail", "css:finder"],
+        ["xpath=//input[@id='loginEmail']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "fenderyamada@gmail.com"
+    }, {
+      "id": "97f66aa1-d72a-4d16-9403-98dcac4d837e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-form",
+      "targets": [
+        ["css=.recaptcha-form", "css:finder"],
+        ["xpath=//form[@action='https://myanimelist.net/register.php?from=%2F']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96ec1df3-0a4a-41d7-8ff2-1e6e2d049a2c",
+      "comment": "",
+      "command": "//assertText",
+      "target": "css=.email_checker_result_text",
+      "targets": [],
+      "value": "You already have an account associated with this e-mail address."
+    }]
+  }, {
+    "id": "ad4f22eb-46c3-443a-b2ac-1759261e9933",
+    "name": "1.6 Register - Existing Username",
+    "commands": [{
+      "id": "efb65223-b477-4010-be2e-22d980e05e5a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85561be7-a684-40cc-b36e-fc75ec4e450e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0dc74b04-7f03-4a25-856d-d02a64c8a0d5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign Up",
+      "targets": [
+        ["linkText=Sign Up", "linkText"],
+        ["css=.btn-signup", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign Up')]", "xpath:link"],
+        ["xpath=//a[@onclick='ga_registration()']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/register.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c819e5ef-04af-4afd-8bc0-d560e8c59d26",
+      "comment": "",
+      "command": "click",
+      "target": "name=user_name",
+      "targets": [
+        ["name=user_name", "name"],
+        ["css=.password_checker_user_name", "css:finder"],
+        ["xpath=//input[@name='user_name']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e19dd2f-459c-4334-912d-a7b695a238c1",
+      "comment": "",
+      "command": "type",
+      "target": "name=user_name",
+      "targets": [
+        ["name=user_name", "name"],
+        ["css=.password_checker_user_name", "css:finder"],
+        ["xpath=//input[@name='user_name']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "frncsblgs"
+    }, {
+      "id": "caa73375-7bfb-4b46-a24a-9a980f42f918",
+      "comment": "",
+      "command": "click",
+      "target": "css=.username_checker_result",
+      "targets": [
+        ["css=.username_checker_result", "css:finder"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "efcc17e1-5550-4e0c-a5be-416362c08c07",
+      "comment": "",
+      "command": "//assertText",
+      "target": "css=.username_checker_result_text",
+      "targets": [],
+      "value": "The username already exists; please choose another."
+    }, {
+      "id": "fce4898e-75d6-45b6-92fc-79dec7a67c59",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.username_checker_result",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "997a8a55-2c2c-458c-9d7e-826fb4b27053",
+    "name": "1.9 Register - Birthday Select (Month)",
+    "commands": [{
+      "id": "83bf6d53-022d-4173-a12f-c107c1bcb2a9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "649d9ecd-24ad-48c1-a018-86d0dcff091d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf466a8e-9e9c-40c5-8f32-47c22cc9e9a7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign Up",
+      "targets": [
+        ["linkText=Sign Up", "linkText"],
+        ["css=.btn-signup", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign Up')]", "xpath:link"],
+        ["xpath=//a[@onclick='ga_registration()']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/register.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d133d3e0-155b-4199-958a-fdd7fecc5750",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[month]",
+      "targets": [
+        ["name=birthday[month]", "name"],
+        ["css=.login-selectbox:nth-child(1)", "css:finder"],
+        ["xpath=//select[@name='birthday[month]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "605565ec-8326-4420-a3ef-c4a88bc0b2ad",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[month]",
+      "targets": [],
+      "value": "label=Jan"
+    }, {
+      "id": "0e56c85e-2fab-40a9-b24f-c5ac2ba54e04",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[month]",
+      "targets": [
+        ["name=birthday[month]", "name"],
+        ["css=.login-selectbox:nth-child(1)", "css:finder"],
+        ["xpath=//select[@name='birthday[month]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "051e6df7-4afe-4bcd-80de-c4573c35af9f",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[month]",
+      "targets": [],
+      "value": "label=Feb"
+    }, {
+      "id": "a062ad0b-a49b-435c-b2c6-7e3426bf8e4c",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[month]",
+      "targets": [
+        ["name=birthday[month]", "name"],
+        ["css=.login-selectbox:nth-child(1)", "css:finder"],
+        ["xpath=//select[@name='birthday[month]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69605550-52e6-4a61-8b97-5e10c15c8fd8",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[month]",
+      "targets": [],
+      "value": "label=Mar"
+    }, {
+      "id": "2bee86f2-7aaa-43c3-8acf-c34473787eed",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[month]",
+      "targets": [
+        ["name=birthday[month]", "name"],
+        ["css=.login-selectbox:nth-child(1)", "css:finder"],
+        ["xpath=//select[@name='birthday[month]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6caee9a7-2b7c-4119-9b2a-00fd7631d99c",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[month]",
+      "targets": [],
+      "value": "label=Apr"
+    }, {
+      "id": "d1f763fc-6f2a-4c90-a26a-97e428bab974",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[month]",
+      "targets": [
+        ["name=birthday[month]", "name"],
+        ["css=.login-selectbox:nth-child(1)", "css:finder"],
+        ["xpath=//select[@name='birthday[month]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9954777b-5c38-4d11-be7d-789be8f71e30",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[month]",
+      "targets": [],
+      "value": "label=May"
+    }, {
+      "id": "3db5cce3-c7ab-4c0c-9c35-5d6be20a110c",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[month]",
+      "targets": [
+        ["name=birthday[month]", "name"],
+        ["css=.login-selectbox:nth-child(1)", "css:finder"],
+        ["xpath=//select[@name='birthday[month]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4f672a9-189f-41a2-8516-6901a205a959",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[month]",
+      "targets": [],
+      "value": "label=Jun"
+    }, {
+      "id": "f584a94e-3bf7-44d7-a92e-30a4e593c61a",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[month]",
+      "targets": [
+        ["name=birthday[month]", "name"],
+        ["css=.login-selectbox:nth-child(1)", "css:finder"],
+        ["xpath=//select[@name='birthday[month]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e762fc8-87d1-4243-8b79-b84c927e972a",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[month]",
+      "targets": [],
+      "value": "label=Jul"
+    }, {
+      "id": "64efc882-0bf3-46fa-9e84-f4ed0942fa05",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[month]",
+      "targets": [
+        ["name=birthday[month]", "name"],
+        ["css=.login-selectbox:nth-child(1)", "css:finder"],
+        ["xpath=//select[@name='birthday[month]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f218313b-ff2d-4144-b26d-4bae75604a62",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[month]",
+      "targets": [],
+      "value": "label=Aug"
+    }, {
+      "id": "f059167d-c041-40d7-a697-35c0aba470af",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[month]",
+      "targets": [
+        ["name=birthday[month]", "name"],
+        ["css=.login-selectbox:nth-child(1)", "css:finder"],
+        ["xpath=//select[@name='birthday[month]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de034a6d-48b4-4f77-bee8-64691b84bd1d",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[month]",
+      "targets": [],
+      "value": "label=Sep"
+    }, {
+      "id": "58b1a6e7-05b6-4eef-88dc-5b588c44a825",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[month]",
+      "targets": [
+        ["name=birthday[month]", "name"],
+        ["css=.login-selectbox:nth-child(1)", "css:finder"],
+        ["xpath=//select[@name='birthday[month]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a89150b-0b5c-4927-9955-be90fed676f4",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[month]",
+      "targets": [],
+      "value": "label=Oct"
+    }, {
+      "id": "30e905e3-d7af-4500-bfb6-bad9b2720dc9",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[month]",
+      "targets": [
+        ["name=birthday[month]", "name"],
+        ["css=.login-selectbox:nth-child(1)", "css:finder"],
+        ["xpath=//select[@name='birthday[month]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "362853d5-fbd3-4727-8d84-1c2af86caf7b",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[month]",
+      "targets": [],
+      "value": "label=Nov"
+    }, {
+      "id": "ebea3c3a-c6be-4e82-a2c3-404e9978f124",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[month]",
+      "targets": [
+        ["name=birthday[month]", "name"],
+        ["css=.login-selectbox:nth-child(1)", "css:finder"],
+        ["xpath=//select[@name='birthday[month]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c0ad836-86d7-4a1c-84a9-46569af51cb1",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[month]",
+      "targets": [],
+      "value": "label=Dec"
+    }]
+  }, {
+    "id": "820e57f0-2a11-4538-a7c3-45a39b66d256",
+    "name": "1.10 Register - Birthday Select (Days)",
+    "commands": [{
+      "id": "40fcb6fb-ebd9-4fb4-8bc7-be5d3c2bbcad",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "344c7f20-7c84-479e-8b8f-59ba32084886",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b01e4132-7eb9-439f-9b9f-9a3f81e70ac4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign Up",
+      "targets": [
+        ["linkText=Sign Up", "linkText"],
+        ["css=.btn-signup", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign Up')]", "xpath:link"],
+        ["xpath=//a[@onclick='ga_registration()']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/register.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7141b01a-b59f-4129-81c2-bf4488a9ed58",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[day]",
+      "targets": [
+        ["name=birthday[day]", "name"],
+        ["css=.login-selectbox:nth-child(2)", "css:finder"],
+        ["xpath=//select[@name='birthday[day]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select[2]", "xpath:idRelative"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d27e873-ae2b-4108-ba1d-f60de519fadb",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[day]",
+      "targets": [],
+      "value": "label=1"
+    }, {
+      "id": "4ad4d795-d3f2-496e-b705-05821814d28f",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[day]",
+      "targets": [
+        ["name=birthday[day]", "name"],
+        ["css=.login-selectbox:nth-child(2)", "css:finder"],
+        ["xpath=//select[@name='birthday[day]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select[2]", "xpath:idRelative"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8cfdf91-a7eb-4f4e-8c83-068db3e6bcf5",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[day]",
+      "targets": [],
+      "value": "label=2"
+    }, {
+      "id": "c64bbba4-82ca-4c84-aee1-1b61c243b28e",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[day]",
+      "targets": [
+        ["name=birthday[day]", "name"],
+        ["css=.login-selectbox:nth-child(2)", "css:finder"],
+        ["xpath=//select[@name='birthday[day]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select[2]", "xpath:idRelative"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce9bc638-86a3-4f5d-9b08-5399be283708",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[day]",
+      "targets": [],
+      "value": "label=3"
+    }, {
+      "id": "87aac99c-139b-45c2-8e2d-d7ec437e0534",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[day]",
+      "targets": [
+        ["name=birthday[day]", "name"],
+        ["css=.login-selectbox:nth-child(2)", "css:finder"],
+        ["xpath=//select[@name='birthday[day]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select[2]", "xpath:idRelative"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c9997bf-91f7-48ba-bb12-2ef29ac75a97",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[day]",
+      "targets": [],
+      "value": "label=4"
+    }, {
+      "id": "9f40d82d-81f4-4560-b95a-0c8efebd4460",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[day]",
+      "targets": [
+        ["name=birthday[day]", "name"],
+        ["css=.login-selectbox:nth-child(2)", "css:finder"],
+        ["xpath=//select[@name='birthday[day]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select[2]", "xpath:idRelative"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f046475e-3690-42aa-b9d9-f35ea00505a5",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[day]",
+      "targets": [],
+      "value": "label=5"
+    }, {
+      "id": "ed8e96e6-7fb1-4e9c-9677-49602fea7738",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[day]",
+      "targets": [
+        ["name=birthday[day]", "name"],
+        ["css=.login-selectbox:nth-child(2)", "css:finder"],
+        ["xpath=//select[@name='birthday[day]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select[2]", "xpath:idRelative"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5e6dd1d-d256-4ef7-b3f7-f9a3eb5b0181",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[day]",
+      "targets": [],
+      "value": "label=6"
+    }, {
+      "id": "b885d7aa-f508-4d23-89f2-467ca2069985",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[day]",
+      "targets": [
+        ["name=birthday[day]", "name"],
+        ["css=.login-selectbox:nth-child(2)", "css:finder"],
+        ["xpath=//select[@name='birthday[day]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select[2]", "xpath:idRelative"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b10552db-4867-4b48-8cf5-74c16c06e85d",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[day]",
+      "targets": [],
+      "value": "label=7"
+    }, {
+      "id": "4f5a9a9d-0070-450f-bf1f-9d9119a91513",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[day]",
+      "targets": [
+        ["name=birthday[day]", "name"],
+        ["css=.login-selectbox:nth-child(2)", "css:finder"],
+        ["xpath=//select[@name='birthday[day]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select[2]", "xpath:idRelative"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "025e7c19-2e2f-47ec-84a7-addff0dfd53c",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[day]",
+      "targets": [],
+      "value": "label=8"
+    }, {
+      "id": "22d9d247-e44c-4609-8aec-215e6d61f6a9",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[day]",
+      "targets": [
+        ["name=birthday[day]", "name"],
+        ["css=.login-selectbox:nth-child(2)", "css:finder"],
+        ["xpath=//select[@name='birthday[day]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select[2]", "xpath:idRelative"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4889fb42-4edd-4dc5-af3b-93de99fa2c8f",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[day]",
+      "targets": [],
+      "value": "label=9"
+    }, {
+      "id": "ae601f74-4781-4887-a2cc-a2168127f249",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[day]",
+      "targets": [
+        ["name=birthday[day]", "name"],
+        ["css=.login-selectbox:nth-child(2)", "css:finder"],
+        ["xpath=//select[@name='birthday[day]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select[2]", "xpath:idRelative"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1de049e-19d1-4655-bc00-534b91f123b2",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[day]",
+      "targets": [],
+      "value": "label=10"
+    }, {
+      "id": "39f56480-4d50-4232-aaa7-fdba226bc908",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login-input-with-text",
+      "targets": [
+        ["css=.login-input-with-text", "css:finder"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div", "xpath:idRelative"],
+        ["xpath=//fieldset/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f2ab0935-04ef-4d28-bfbc-04b1a51abe52",
+    "name": "1.11 Register - Birthday Select (Years)",
+    "commands": [{
+      "id": "ebe89c58-1e0e-4771-ba69-7875616a3bcb",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89aa7ad8-c967-4811-a011-a2841d5f306f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1e9c23c-a249-415c-9a3e-b6df8b7c1cd0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign Up",
+      "targets": [
+        ["linkText=Sign Up", "linkText"],
+        ["css=.btn-signup", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign Up')]", "xpath:link"],
+        ["xpath=//a[@onclick='ga_registration()']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/register.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6218ade3-2724-437c-bdef-489f61d5805e",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[year]",
+      "targets": [
+        ["name=birthday[year]", "name"],
+        ["css=.login-selectbox:nth-child(3)", "css:finder"],
+        ["xpath=//select[@name='birthday[year]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select[3]", "xpath:idRelative"],
+        ["xpath=//select[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe85cab3-a83e-45c5-b4c2-ad8ecfe5fd56",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[year]",
+      "targets": [],
+      "value": "label=2000"
+    }, {
+      "id": "89ab82a5-d711-43cd-bc7f-749e4a28b244",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[year]",
+      "targets": [
+        ["name=birthday[year]", "name"],
+        ["css=.login-selectbox:nth-child(3)", "css:finder"],
+        ["xpath=//select[@name='birthday[year]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select[3]", "xpath:idRelative"],
+        ["xpath=//select[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1273b3d6-9047-43b8-bdc8-e101f4b4e4a2",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[year]",
+      "targets": [],
+      "value": "label=2001"
+    }, {
+      "id": "c4d57ff2-854f-4601-a85d-84f144d06034",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[year]",
+      "targets": [
+        ["name=birthday[year]", "name"],
+        ["css=.login-selectbox:nth-child(3)", "css:finder"],
+        ["xpath=//select[@name='birthday[year]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select[3]", "xpath:idRelative"],
+        ["xpath=//select[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fa04b4c-3e2a-4a61-a814-497080783a77",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[year]",
+      "targets": [],
+      "value": "label=2002"
+    }, {
+      "id": "c51b4a2b-733b-49a9-a84b-1b3efa429dd4",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[year]",
+      "targets": [
+        ["name=birthday[year]", "name"],
+        ["css=.login-selectbox:nth-child(3)", "css:finder"],
+        ["xpath=//select[@name='birthday[year]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select[3]", "xpath:idRelative"],
+        ["xpath=//select[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af48f756-770b-4540-9214-34ddc4539022",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[year]",
+      "targets": [],
+      "value": "label=2003"
+    }, {
+      "id": "8901628b-467b-4582-99b5-6065b2ae3ec0",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[year]",
+      "targets": [
+        ["name=birthday[year]", "name"],
+        ["css=.login-selectbox:nth-child(3)", "css:finder"],
+        ["xpath=//select[@name='birthday[year]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select[3]", "xpath:idRelative"],
+        ["xpath=//select[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0963be38-c793-472c-8d85-26a9e7f53b4c",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[year]",
+      "targets": [],
+      "value": "label=2005"
+    }, {
+      "id": "660669c2-a6d3-4c22-bfc1-3cb95a321b74",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[year]",
+      "targets": [
+        ["name=birthday[year]", "name"],
+        ["css=.login-selectbox:nth-child(3)", "css:finder"],
+        ["xpath=//select[@name='birthday[year]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select[3]", "xpath:idRelative"],
+        ["xpath=//select[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f7282bb-c20d-47e6-94f4-40e343e5ad90",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[year]",
+      "targets": [],
+      "value": "label=2007"
+    }, {
+      "id": "1455af80-ef05-4a46-8bf6-e6239b5d6dd5",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[year]",
+      "targets": [
+        ["name=birthday[year]", "name"],
+        ["css=.login-selectbox:nth-child(3)", "css:finder"],
+        ["xpath=//select[@name='birthday[year]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select[3]", "xpath:idRelative"],
+        ["xpath=//select[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "233a7d4c-effa-42bb-b3f6-3ad43848e251",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[year]",
+      "targets": [
+        ["name=birthday[year]", "name"],
+        ["css=.login-selectbox:nth-child(3)", "css:finder"],
+        ["xpath=//select[@name='birthday[year]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select[3]", "xpath:idRelative"],
+        ["xpath=//select[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b53ddfb7-f60d-43ba-b316-80c71d2f8717",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[year]",
+      "targets": [],
+      "value": "label=2008"
+    }, {
+      "id": "8b821b73-f71b-4087-a56b-e0019fe7e234",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[year]",
+      "targets": [
+        ["name=birthday[year]", "name"],
+        ["css=.login-selectbox:nth-child(3)", "css:finder"],
+        ["xpath=//select[@name='birthday[year]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select[3]", "xpath:idRelative"],
+        ["xpath=//select[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3157c4e1-0a70-4012-867a-30efaaa80fdf",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[year]",
+      "targets": [],
+      "value": "label=2011"
+    }, {
+      "id": "36e49867-b35e-4e3a-976d-bc3fc4cc918f",
+      "comment": "",
+      "command": "click",
+      "target": "name=birthday[year]",
+      "targets": [
+        ["name=birthday[year]", "name"],
+        ["css=.login-selectbox:nth-child(3)", "css:finder"],
+        ["xpath=//select[@name='birthday[year]']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div/select[3]", "xpath:idRelative"],
+        ["xpath=//select[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2b2dc70-a364-4cb1-8786-30d3b130eef4",
+      "comment": "",
+      "command": "select",
+      "target": "name=birthday[year]",
+      "targets": [],
+      "value": "label=2014"
+    }]
+  }, {
+    "id": "f16801b1-5c66-4b4e-a904-5aaabf6cad98",
+    "name": "1.12 Register - Less than 2 Characters for Username",
+    "commands": [{
+      "id": "bd67dc6a-636e-49f3-9af9-7a1e3a9328c7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65c1f9eb-b312-434b-a617-9aae0848cc2e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee442215-ecb3-4a7f-a28d-8613853c0b59",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign Up",
+      "targets": [
+        ["linkText=Sign Up", "linkText"],
+        ["css=.btn-signup", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign Up')]", "xpath:link"],
+        ["xpath=//a[@onclick='ga_registration()']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/register.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "941f3963-57bb-4e82-9e4c-7e17c1bc10b5",
+      "comment": "",
+      "command": "click",
+      "target": "name=user_name",
+      "targets": [
+        ["name=user_name", "name"],
+        ["css=.password_checker_user_name", "css:finder"],
+        ["xpath=//input[@name='user_name']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7023b205-7200-4105-a734-bb4675502848",
+      "comment": "",
+      "command": "type",
+      "target": "name=user_name",
+      "targets": [
+        ["name=user_name", "name"],
+        ["css=.password_checker_user_name", "css:finder"],
+        ["xpath=//input[@name='user_name']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "f"
+    }, {
+      "id": "e154b00f-dcb5-4ec3-aa0d-4bbd2f5dd8e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-form",
+      "targets": [
+        ["css=.recaptcha-form", "css:finder"],
+        ["xpath=//form[@action='https://myanimelist.net/register.php?from=%2F']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b13505e5-38fd-4e91-bd64-d1cdd4d9715b",
+      "comment": "",
+      "command": "//assertText",
+      "target": "css=.username_checker_result",
+      "targets": [],
+      "value": "Please enter a username between 2 and 16 characters."
+    }, {
+      "id": "8e0a4469-2f2b-4451-88ba-9fe35bab6887",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.username_checker_result",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7bf4a906-b173-4245-b0a6-4a5f13e6354f",
+    "name": "1.13 Register - Greater than 16 Characters for Username",
+    "commands": [{
+      "id": "da844c22-7b32-4190-a677-623b8e1631f9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d447c29e-4ee7-4ef6-9e2b-24c1372c92f2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea67ee43-d39c-41af-8323-b212a96eec46",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign Up",
+      "targets": [
+        ["linkText=Sign Up", "linkText"],
+        ["css=.btn-signup", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign Up')]", "xpath:link"],
+        ["xpath=//a[@onclick='ga_registration()']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/register.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ce5e948-a616-4456-acf8-a080030532b8",
+      "comment": "",
+      "command": "click",
+      "target": "name=user_name",
+      "targets": [
+        ["name=user_name", "name"],
+        ["css=.password_checker_user_name", "css:finder"],
+        ["xpath=//input[@name='user_name']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8071c222-7e6b-4bdf-bb01-54dbe2438acf",
+      "comment": "",
+      "command": "type",
+      "target": "name=user_name",
+      "targets": [
+        ["name=user_name", "name"],
+        ["css=.password_checker_user_name", "css:finder"],
+        ["xpath=//input[@name='user_name']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "fenderyamadaryoworldwide"
+    }, {
+      "id": "6a3c4e47-17a0-4ded-aa5d-d7338f2bb73b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-form",
+      "targets": [
+        ["css=.recaptcha-form", "css:finder"],
+        ["xpath=//form[@action='https://myanimelist.net/register.php?from=%2F']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a86abce-83e2-4cd3-9e3a-4fbab22ff14e",
+      "comment": "",
+      "command": "//assertText",
+      "target": "css=.username_checker_result_text",
+      "targets": [],
+      "value": "Please enter a username between 2 and 16 characters."
+    }, {
+      "id": "6a3c728b-8644-4966-b455-d78432a84875",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.username_checker_result",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "adaddd23-7c12-4ad6-b797-30cda62c456e",
+    "name": "1.14 Register - Less than 6 Character Password",
+    "commands": [{
+      "id": "ab5382da-7e32-4cd7-a218-55cf9e9581b0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb351a93-98e0-4cb5-bf69-01b49872d33c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8fcd97d5-10c8-4fa9-a5c8-574eb551558e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign Up",
+      "targets": [
+        ["linkText=Sign Up", "linkText"],
+        ["css=.btn-signup", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign Up')]", "xpath:link"],
+        ["xpath=//a[@onclick='ga_registration()']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/register.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e54123a-f35b-443b-85dc-db11c2dc52f1",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87a8566f-ec54-40fd-884c-5e1a87997b55",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "forever"
+    }, {
+      "id": "9a342698-85d3-49c9-b263-95ad037686cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login-input-with-text",
+      "targets": [
+        ["css=.login-input-with-text", "css:finder"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/fieldset/div", "xpath:idRelative"],
+        ["xpath=//fieldset/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00536a7d-ac5a-45d2-ab7b-cad7525c29d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.password_checker_result_text",
+      "targets": [
+        ["css=.password_checker_result_text", "css:finder"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[3]/p/span", "xpath:idRelative"],
+        ["xpath=//p/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Password must be between 6 - 50 characters long and contain at least two of the following: uppercase, lowercase, numbers and symbols.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e57cc05a-6a21-43a3-b215-9deca183d22f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-form",
+      "targets": [
+        ["css=.recaptcha-form", "css:finder"],
+        ["xpath=//form[@action='https://myanimelist.net/register.php?from=%2F']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dab837df-fb34-4621-9ba8-a93f22ba8e74",
+      "comment": "",
+      "command": "//assertText",
+      "target": "css=.password_checker_result",
+      "targets": [],
+      "value": "Password must be between 6 - 50 characters long and contain at least two of the following: uppercase, lowercase, numbers and symbols."
+    }]
+  }, {
+    "id": "ac12a265-3e83-4264-979e-203089f7bddc",
+    "name": "1.15 Register - Greater than 50 Character Password ",
+    "commands": [{
+      "id": "f7f38e08-9f20-43ac-8b39-dd37b96999d4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eab16d2d-fc00-4235-88a8-dae631c3bb02",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02b59379-e535-4b62-96a4-47389dcbc919",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Hide Ads",
+      "targets": [
+        ["linkText=Hide Ads", "linkText"],
+        ["css=.btn-mal-service", "css:finder"],
+        ["xpath=//a[contains(text(),'Hide Ads')]", "xpath:link"],
+        ["xpath=//a[@onclick='ga_mal_banner()']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/membership?_location=mal_h_u')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Hide Ads')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "704c187b-c7eb-478c-a4e6-7cbbda74d7dc",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Hide Ads",
+      "targets": [
+        ["linkText=Hide Ads", "linkText"],
+        ["css=.btn-mal-service", "css:finder"],
+        ["xpath=//a[contains(text(),'Hide Ads')]", "xpath:link"],
+        ["xpath=//a[@onclick='ga_mal_banner()']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/membership?_location=mal_h_u')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Hide Ads')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfb36826-f73a-4c55-a44e-d2fc4403ec8f",
+      "comment": "",
+      "command": "click",
+      "target": "id=headerSmall",
+      "targets": [
+        ["id=headerSmall", "id"],
+        ["css=#headerSmall", "css:finder"],
+        ["xpath=//div[@id='headerSmall']", "xpath:attributes"],
+        ["xpath=//div[@id='myanimelist']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3dace26f-ac2c-482f-a00d-7fe8c90bfe53",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign Up",
+      "targets": [
+        ["linkText=Sign Up", "linkText"],
+        ["css=.btn-signup", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign Up')]", "xpath:link"],
+        ["xpath=//a[@onclick='ga_registration()']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/register.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6eca0b62-82e6-462c-9893-7c740c14dc16",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7e3a641-3883-45be-9651-eafeff6a78de",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "forever21080709worldwideryouyamada504gibsonzildjianyamahaibanez"
+    }, {
+      "id": "0fa33d6f-93d3-446d-9a27-403ee936e84d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-form",
+      "targets": [
+        ["css=.recaptcha-form", "css:finder"],
+        ["xpath=//form[@action='https://myanimelist.net/register.php?from=%2F']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4285a321-40ca-457f-a618-a24dd2db3af0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-form",
+      "targets": [
+        ["css=.recaptcha-form", "css:finder"],
+        ["xpath=//form[@action='https://myanimelist.net/register.php?from=%2F']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7afb01f0-6bc5-405f-a03d-fd512cd55d2a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-form",
+      "targets": [
+        ["css=.recaptcha-form", "css:finder"],
+        ["xpath=//form[@action='https://myanimelist.net/register.php?from=%2F']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed4dfe03-e9f9-40de-a44e-596c67983917",
+      "comment": "",
+      "command": "//assertText",
+      "target": "css=.password_checker_result_text",
+      "targets": [],
+      "value": "Password must be between 6 - 50 characters long and contain at least two of the following: uppercase, lowercase, numbers and symbols."
+    }, {
+      "id": "4edddc0d-db13-4baa-b81c-0f824fff9096",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.password_checker_result",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b2ad3d74-52c3-456b-8501-28a8fe922fe7",
+    "name": "2.1 Login - Valid Input ",
+    "commands": [{
+      "id": "c55b0a5f-438a-41ae-9dfd-1ec628f24340",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d205c233-c9fb-42c0-9b74-1e496dc01074",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b9d152db-99ae-4084-a342-609221be3bcc",
+      "comment": "",
+      "command": "click",
+      "target": "id=malLogin",
+      "targets": [
+        ["id=malLogin", "id"],
+        ["linkText=Login", "linkText"],
+        ["css=.header-menu-login > #malLogin", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[@id='malLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/login.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd3a2ab0-eed1-4223-9496-86052a551b27",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginUserName",
+      "targets": [
+        ["id=loginUserName", "id"],
+        ["name=user_name", "name"],
+        ["css=#loginUserName", "css:finder"],
+        ["xpath=//input[@id='loginUserName']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1023f6aa-5516-415e-bd89-b1e4f3837864",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginUserName",
+      "targets": [
+        ["id=loginUserName", "id"],
+        ["name=user_name", "name"],
+        ["css=#loginUserName", "css:finder"],
+        ["xpath=//input[@id='loginUserName']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "fenderyamada"
+    }, {
+      "id": "9f4d9738-1f13-4620-8a6b-346cd1461e7d",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-password",
+      "targets": [
+        ["id=login-password", "id"],
+        ["name=password", "name"],
+        ["css=#login-password", "css:finder"],
+        ["xpath=//input[@id='login-password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a51403f0-e182-4076-b096-782af98f4208",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-password",
+      "targets": [
+        ["id=login-password", "id"],
+        ["name=password", "name"],
+        ["css=#login-password", "css:finder"],
+        ["xpath=//input[@id='login-password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "Forever21"
+    }, {
+      "id": "23571672-2923-458d-b524-a05c751ce1a1",
+      "comment": "",
+      "command": "//sendKeys",
+      "target": "id=login-password",
+      "targets": [],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "df02b70a-504a-485b-bed8-9d6acefc30c1",
+      "comment": "",
+      "command": "//click",
+      "target": "id=header-menu",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3286e280-d7eb-4502-b78b-283235f7bb78",
+    "name": "2.8 Login - Too Many Failed Login",
+    "commands": [{
+      "id": "96cd124c-3dbc-4a7e-a4ab-1a337cd6f5b3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ea37e19-344b-4517-97da-14bb21d8285a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af83b16e-f044-4aa1-ae54-8e891aaf21d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=malLogin",
+      "targets": [
+        ["id=malLogin", "id"],
+        ["linkText=Login", "linkText"],
+        ["css=.header-menu-login > #malLogin", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[@id='malLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/login.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ad956e1-5304-4fa9-83ec-e523da1188ee",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginUserName",
+      "targets": [
+        ["id=loginUserName", "id"],
+        ["name=user_name", "name"],
+        ["css=#loginUserName", "css:finder"],
+        ["xpath=//input[@id='loginUserName']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "090c600b-3cb3-4cd3-a250-bb41b7bb27f9",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-password",
+      "targets": [
+        ["id=login-password", "id"],
+        ["name=password", "name"],
+        ["css=#login-password", "css:finder"],
+        ["xpath=//input[@id='login-password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "021c7127-8818-45c5-99bd-1477562a9d83",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-recaptcha-submit",
+      "targets": [
+        ["css=.btn-recaptcha-submit", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[6]/input", "xpath:idRelative"],
+        ["xpath=//p[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8370b7d3-31c2-4c93-bfd5-f6eb3b577fc5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.badresult",
+      "targets": [
+        ["css=.badresult", "css:finder"],
+        ["xpath=//div[@id='content']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52a8426b-0d00-4467-98be-5a89256dc575",
+      "comment": "",
+      "command": "//assertText",
+      "target": "css=.badresult",
+      "targets": [],
+      "value": "Too many failed login attempts. Please try to login again after several hours."
+    }]
+  }, {
+    "id": "09723d2b-92d9-4382-86c8-fef0d2dd4754",
+    "name": "2.3 Login - Valid Username Invalid Password",
+    "commands": [{
+      "id": "ac5151c2-ffba-4309-80e6-c4b6cc031a4b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1a42129-cff2-405b-b504-109e18483d8f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf8b0654-0596-48cf-9ace-a649fd89f69c",
+      "comment": "",
+      "command": "click",
+      "target": "id=malLogin",
+      "targets": [
+        ["id=malLogin", "id"],
+        ["linkText=Login", "linkText"],
+        ["css=.header-menu-login > #malLogin", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[@id='malLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/login.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b138224c-887d-4a10-9da3-ed5f01514a14",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginUserName",
+      "targets": [
+        ["id=loginUserName", "id"],
+        ["name=user_name", "name"],
+        ["css=#loginUserName", "css:finder"],
+        ["xpath=//input[@id='loginUserName']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d562c0d4-2b51-40a7-8011-46f210861d7c",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginUserName",
+      "targets": [
+        ["id=loginUserName", "id"],
+        ["name=user_name", "name"],
+        ["css=#loginUserName", "css:finder"],
+        ["xpath=//input[@id='loginUserName']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "fenderyamaha"
+    }, {
+      "id": "af052152-b324-4aed-8b22-13f33c83a389",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-password",
+      "targets": [
+        ["id=login-password", "id"],
+        ["name=password", "name"],
+        ["css=#login-password", "css:finder"],
+        ["xpath=//input[@id='login-password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5ca107a-20f2-45b7-ad59-4fe4b59be714",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-password",
+      "targets": [
+        ["id=login-password", "id"],
+        ["name=password", "name"],
+        ["css=#login-password", "css:finder"],
+        ["xpath=//input[@id='login-password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "qwerty12345"
+    }, {
+      "id": "04cf16d8-9957-47a6-bfa0-19a2858a5902",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='Login']",
+      "targets": [
+        ["css=.btn-recaptcha-submit", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[6]/input", "xpath:idRelative"],
+        ["xpath=//p[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e0598d4-9241-450f-95a1-34b74d65bb37",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.badresult",
+      "targets": [],
+      "value": "Your username or password is incorrect."
+    }]
+  }, {
+    "id": "e5a29bd3-0f36-4e38-a644-10e87ed748f8",
+    "name": "3.1 Search - Search Bar Placeholder Text is Present",
+    "commands": [{
+      "id": "3819ff88-e7bc-4001-b962-a07b001b531e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "188cecbd-e0d3-4b46-a93e-cf7ab44991f6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ddf841fa-ff28-475b-b895-a9f20a58d49c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@placeholder='Search Anime, Manga, and more...']",
+      "targets": [
+        ["id=topSearchText", "id"],
+        ["name=keyword", "name"],
+        ["css=#topSearchText", "css:finder"],
+        ["xpath=//input[@id='topSearchText']", "xpath:attributes"],
+        ["xpath=//form[@id='searchBar']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e122e18e-b15c-4b6a-981c-69a8d3e998da",
+    "name": "2.7 Login - 'Stay logged in?' Checkbox",
+    "commands": [{
+      "id": "b6eaaf3e-9115-4361-8fe1-743865bbf44a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f73de8e2-644e-4e9d-90ed-748f79cb6c57",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76f9590a-e8ae-456a-b63a-77ba5e7bc854",
+      "comment": "",
+      "command": "click",
+      "target": "id=malLogin",
+      "targets": [
+        ["id=malLogin", "id"],
+        ["linkText=Login", "linkText"],
+        ["css=.header-menu-login > #malLogin", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[@id='malLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/login.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3396d5b-1665-496a-8923-67417631e06f",
+      "comment": "",
+      "command": "click",
+      "target": "name=cookie",
+      "targets": [
+        ["name=cookie", "name"],
+        ["css=.pt12 > input", "css:finder"],
+        ["xpath=//input[@name='cookie']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[5]/input", "xpath:idRelative"],
+        ["xpath=//p[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e07e43e0-f786-423b-99c0-4bb411dc5233",
+      "comment": "",
+      "command": "click",
+      "target": "name=cookie",
+      "targets": [
+        ["name=cookie", "name"],
+        ["css=.pt12 > input", "css:finder"],
+        ["xpath=//input[@name='cookie']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[5]/input", "xpath:idRelative"],
+        ["xpath=//p[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1d8f132-6e42-44bb-8423-0de859928839",
+      "comment": "",
+      "command": "click",
+      "target": "name=cookie",
+      "targets": [
+        ["name=cookie", "name"],
+        ["css=.pt12 > input", "css:finder"],
+        ["xpath=//input[@name='cookie']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[5]/input", "xpath:idRelative"],
+        ["xpath=//p[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "475758a4-f787-41c7-8153-ced9086d8413",
+      "comment": "",
+      "command": "click",
+      "target": "name=cookie",
+      "targets": [
+        ["name=cookie", "name"],
+        ["css=.pt12 > input", "css:finder"],
+        ["xpath=//input[@name='cookie']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[5]/input", "xpath:idRelative"],
+        ["xpath=//p[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ac5fea1a-99d0-4354-a093-478e7142de35",
+    "name": "3.2 Search - Search Icon is Present",
+    "commands": [{
+      "id": "02ba2a1c-1dee-41cd-9aaa-83ecb60c2e57",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "edc26598-ac17-447e-99f2-e8141eb0cc12",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b894f087-f22b-4728-b87b-efaa5119ea52",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-magnifying-glass",
+      "targets": [
+        ["css=.fa-magnifying-glass", "css:finder"],
+        ["xpath=//button[@id='topSearchButon']/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cabeed7-14f2-4e41-9ce9-1b9c8e4728f8",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.fa-magnifying-glass",
+      "targets": [
+        ["css=.fa-magnifying-glass", "css:finder"],
+        ["xpath=//button[@id='topSearchButon']/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f2cbf0e0-c289-4ca6-b8a6-6f47afae92e6",
+    "name": "3.3 Search - Search Data",
+    "commands": [{
+      "id": "a96675d1-2160-44da-9299-15a67e4ff21c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db5fd722-c5d4-4bad-97af-63aa11a01d93",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03eae28a-2e48-457c-8095-6051fa7de94c",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//div[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='myanimelist']/div[2]/div[3]", "xpath:idRelative"],
+        ["xpath=//body/div/div[2]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c591a8a-447c-4450-9831-678bab1e1225",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=topSearchText",
+      "targets": [
+        ["id=topSearchText", "id"],
+        ["name=keyword", "name"],
+        ["css=#topSearchText", "css:finder"],
+        ["xpath=//input[@id='topSearchText']", "xpath:attributes"],
+        ["xpath=//form[@id='searchBar']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fbe8266-8eff-46aa-a098-9772bbd9fb0e",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchText",
+      "targets": [
+        ["id=topSearchText", "id"],
+        ["name=keyword", "name"],
+        ["css=#topSearchText", "css:finder"],
+        ["xpath=//input[@id='topSearchText']", "xpath:attributes"],
+        ["xpath=//form[@id='searchBar']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84d28eb2-bf0f-4b40-9f45-a4e7d5028b4f",
+      "comment": "",
+      "command": "type",
+      "target": "id=topSearchText",
+      "targets": [
+        ["id=topSearchText", "id"],
+        ["name=keyword", "name"],
+        ["css=#topSearchText", "css:finder"],
+        ["xpath=//input[@id='topSearchText']", "xpath:attributes"],
+        ["xpath=//form[@id='searchBar']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "bocchi the rock"
+    }, {
+      "id": "3652fef2-23b9-401a-a960-7e638bfbd255",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-magnifying-glass",
+      "targets": [
+        ["css=.fa-magnifying-glass", "css:finder"],
+        ["xpath=//button[@id='topSearchButon']/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70689580-06af-4ff9-941b-e44dd59a4e5d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.js-scrollfix-bottom-rel > .result-header",
+      "targets": [
+        ["css=.js-scrollfix-bottom-rel > .result-header", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "Search Results for \"bocchi the rock\""
+    }]
+  }, {
+    "id": "b666abe1-327f-40bb-a7f8-d4dd580e30a0",
+    "name": "3.4 Search - Search without Value",
+    "commands": [{
+      "id": "32fee1a4-14f3-4850-b936-76937d9a0493",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76d5af2c-0be5-4051-bf25-d141d83dc5e5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fec9e55a-c55d-4506-9731-cfc3c68f7e4b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=topSearchText",
+      "targets": [
+        ["id=topSearchText", "id"],
+        ["name=keyword", "name"],
+        ["css=#topSearchText", "css:finder"],
+        ["xpath=//input[@id='topSearchText']", "xpath:attributes"],
+        ["xpath=//form[@id='searchBar']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "decfae05-592c-4fbc-96ae-d21efddcb3b6",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchText",
+      "targets": [
+        ["id=topSearchText", "id"],
+        ["name=keyword", "name"],
+        ["css=#topSearchText", "css:finder"],
+        ["xpath=//input[@id='topSearchText']", "xpath:attributes"],
+        ["xpath=//form[@id='searchBar']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "693d6e3e-d9a2-4202-996d-37f2943b9b5c",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.fa-magnifying-glass",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3fa93184-8132-45c0-9cfe-b6c1427f836c",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.fa-magnifying-glass",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "502a55b6-4fea-47c5-9ef7-5b4d08475bd3",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchText",
+      "targets": [
+        ["id=topSearchText", "id"],
+        ["name=keyword", "name"],
+        ["css=#topSearchText", "css:finder"],
+        ["xpath=//input[@id='topSearchText']", "xpath:attributes"],
+        ["xpath=//form[@id='searchBar']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24e3c4a5-926f-495e-9515-23fd7e0d0e30",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.fa-magnifying-glass",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f79179c-7a59-4451-8176-a1c4154cc8b8",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchText",
+      "targets": [
+        ["id=topSearchText", "id"],
+        ["name=keyword", "name"],
+        ["css=#topSearchText", "css:finder"],
+        ["xpath=//input[@id='topSearchText']", "xpath:attributes"],
+        ["xpath=//form[@id='searchBar']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4df9d98b-1989-48ec-a6b8-304c40e02f2b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-magnifying-glass",
+      "targets": [
+        ["css=.fa-magnifying-glass", "css:finder"],
+        ["xpath=//button[@id='topSearchButon']/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb412e3a-bd77-49bf-8f24-61c92c4f0c09",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-magnifying-glass",
+      "targets": [
+        ["css=.fa-magnifying-glass", "css:finder"],
+        ["xpath=//button[@id='topSearchButon']/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9a7da20-8284-4831-a1b6-284d2e09a6ea",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.fa-magnifying-glass",
+      "targets": [
+        ["css=.fa-magnifying-glass", "css:finder"],
+        ["xpath=//button[@id='topSearchButon']/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2626b68-f759-4d5a-becf-078bd1e696c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-magnifying-glass",
+      "targets": [
+        ["css=.fa-magnifying-glass", "css:finder"],
+        ["xpath=//button[@id='topSearchButon']/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c68c140-949b-4a84-9946-c0a830897c3e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//button[@id='topSearchButon' and @class='fl-l notActive']/i",
+      "targets": [
+        ["css=.fa-magnifying-glass", "css:finder"],
+        ["xpath=//button[@id='topSearchButon']/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a73a9301-a31d-42f9-a11f-b3256b200a7e",
+    "name": "3.5 Search - Top Search Result List",
+    "commands": [{
+      "id": "be80f83a-333c-409e-8e8f-1909978f9123",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b25675a1-0af5-4a11-b22e-957b6eea7d3a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b61c8945-0e42-4ff2-8700-73b0782aa7d1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@placeholder='Search Anime, Manga, and more...']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "683559c0-fa45-4f74-9538-385ff63a8336",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49863f59-910f-4932-800c-bdea4c0a94f5",
+      "comment": "",
+      "command": "type",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": "one piece"
+    }, {
+      "id": "02438e67-8481-4feb-b8a9-2d82bdc9b263",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='topSearchResultList']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b9476ada-fca9-4bd9-9abb-58a3384e1225",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='topSearchResultList']/div[3]/div/a/div/div/div[2]",
+      "targets": [
+        ["css=.extra-info", "css:finder"],
+        ["xpath=//div[@id='topSearchResultList']/div[2]/div/a/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//a/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57898057-832c-4730-b9aa-62c63ba0259b",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "One Piece Film: Z (One Piece Film Z) - MyAnimeList.net",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "05b243ee-5d0d-4094-88e6-99cffe555feb",
+    "name": "3.6 Search - Search Select Value",
+    "commands": [{
+      "id": "81f5ad55-0aab-4375-85e6-542376ae8c21",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6be901d-5247-4d0b-8468-ca3687869146",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "966a3960-e7ff-4205-8ed8-6fed5a274061",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [
+        ["id=topSearchValue", "id"],
+        ["name=type", "name"],
+        ["css=#topSearchValue", "css:finder"],
+        ["xpath=//select[@id='topSearchValue']", "xpath:attributes"],
+        ["xpath=//form[@id='searchBar']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dce80f26-a82c-43f7-bcc7-8a17849d65f1",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [
+        ["id=topSearchValue", "id"],
+        ["name=type", "name"],
+        ["css=#topSearchValue", "css:finder"],
+        ["xpath=//select[@id='topSearchValue']", "xpath:attributes"],
+        ["xpath=//form[@id='searchBar']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09fa2179-ac7b-4228-a26a-b558b21f305d",
+      "comment": "",
+      "command": "select",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "label=Anime"
+    }, {
+      "id": "b77abcee-d7ea-4a9c-a9df-2e33d8ad9c2d",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [
+        ["id=topSearchValue", "id"],
+        ["name=type", "name"],
+        ["css=#topSearchValue", "css:finder"],
+        ["xpath=//select[@id='topSearchValue']", "xpath:attributes"],
+        ["xpath=//form[@id='searchBar']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "930298be-687b-4f8b-acb5-cf216f641ec3",
+      "comment": "",
+      "command": "select",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "label=Manga"
+    }, {
+      "id": "78be6478-20b0-4610-883e-899439348948",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [
+        ["id=topSearchValue", "id"],
+        ["name=type", "name"],
+        ["css=#topSearchValue", "css:finder"],
+        ["xpath=//select[@id='topSearchValue']", "xpath:attributes"],
+        ["xpath=//form[@id='searchBar']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5419d92-796e-4f4a-b730-75f849faca61",
+      "comment": "",
+      "command": "select",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "label=Characters"
+    }, {
+      "id": "aec16244-215e-4e17-8b63-4d0547c6192e",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [
+        ["id=topSearchValue", "id"],
+        ["name=type", "name"],
+        ["css=#topSearchValue", "css:finder"],
+        ["xpath=//select[@id='topSearchValue']", "xpath:attributes"],
+        ["xpath=//form[@id='searchBar']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "451de27a-6066-441c-84f7-5dd48ca0887a",
+      "comment": "",
+      "command": "select",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "label=People"
+    }, {
+      "id": "0308075d-ea37-4a39-8919-d46fefed15dc",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [
+        ["id=topSearchValue", "id"],
+        ["name=type", "name"],
+        ["css=#topSearchValue", "css:finder"],
+        ["xpath=//select[@id='topSearchValue']", "xpath:attributes"],
+        ["xpath=//form[@id='searchBar']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2701e63f-411d-4732-8eb1-132a4a5a4c6d",
+      "comment": "",
+      "command": "select",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "label=Companies"
+    }, {
+      "id": "1986d08b-8cb1-4039-a1f6-7387f8fb9331",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [
+        ["id=topSearchValue", "id"],
+        ["name=type", "name"],
+        ["css=#topSearchValue", "css:finder"],
+        ["xpath=//select[@id='topSearchValue']", "xpath:attributes"],
+        ["xpath=//form[@id='searchBar']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0b4f370-42e3-4420-92fb-887ad8ec0225",
+      "comment": "",
+      "command": "select",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "label=Manga Store"
+    }, {
+      "id": "097b664d-4b78-4dae-bf9f-818222c41fa4",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [
+        ["id=topSearchValue", "id"],
+        ["name=type", "name"],
+        ["css=#topSearchValue", "css:finder"],
+        ["xpath=//select[@id='topSearchValue']", "xpath:attributes"],
+        ["xpath=//form[@id='searchBar']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6e4a4fb-82d6-47fa-825d-ba5b2258551f",
+      "comment": "",
+      "command": "select",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "label=News"
+    }, {
+      "id": "06241df5-8d78-44f7-82c7-c7f902349a36",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [
+        ["id=topSearchValue", "id"],
+        ["name=type", "name"],
+        ["css=#topSearchValue", "css:finder"],
+        ["xpath=//select[@id='topSearchValue']", "xpath:attributes"],
+        ["xpath=//form[@id='searchBar']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cb9c61e-fa46-43e9-9ea6-929c3ff3efbe",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [
+        ["id=topSearchValue", "id"],
+        ["name=type", "name"],
+        ["css=#topSearchValue", "css:finder"],
+        ["xpath=//select[@id='topSearchValue']", "xpath:attributes"],
+        ["xpath=//form[@id='searchBar']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df118504-d96a-441f-a148-7420ca253674",
+      "comment": "",
+      "command": "select",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "label=Featured Articles"
+    }, {
+      "id": "51f4f684-daaf-4004-88c4-f369476c76a1",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [
+        ["id=topSearchValue", "id"],
+        ["name=type", "name"],
+        ["css=#topSearchValue", "css:finder"],
+        ["xpath=//select[@id='topSearchValue']", "xpath:attributes"],
+        ["xpath=//form[@id='searchBar']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c0c35e3-836d-4229-a453-5411005db841",
+      "comment": "",
+      "command": "select",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "label=Forum"
+    }, {
+      "id": "3eae6a5d-709d-4f40-9ec0-c8be4c0741e9",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [
+        ["id=topSearchValue", "id"],
+        ["name=type", "name"],
+        ["css=#topSearchValue", "css:finder"],
+        ["xpath=//select[@id='topSearchValue']", "xpath:attributes"],
+        ["xpath=//form[@id='searchBar']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81ad8a89-1233-4a17-aa82-2dcbc19c3d62",
+      "comment": "",
+      "command": "select",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "label=Clubs"
+    }, {
+      "id": "5e30020a-7396-45b8-8aa3-3bf34678a480",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [
+        ["id=topSearchValue", "id"],
+        ["name=type", "name"],
+        ["css=#topSearchValue", "css:finder"],
+        ["xpath=//select[@id='topSearchValue']", "xpath:attributes"],
+        ["xpath=//form[@id='searchBar']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d53c8a1-6c6d-455d-a574-79863e3a1fa5",
+      "comment": "",
+      "command": "select",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "label=Users"
+    }]
+  }, {
+    "id": "88c00ceb-aeb9-4e8a-a93a-30eb1131e347",
+    "name": "3.7 Search - Searching with Anime Search Value option",
+    "commands": [{
+      "id": "0eced551-56f8-4e7c-af39-b6f663b478c5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "358754c8-b8b1-4086-a94a-4695714aa641",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a93d5bfd-2a59-4a9e-86dd-6a075621181e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@placeholder='Search Anime, Manga, and more...']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba00206c-f65c-4f14-b75a-79f15d44c5c9",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "772d186d-9b77-4c85-a535-c2d13c1560c8",
+      "comment": "",
+      "command": "select",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "label=Anime"
+    }, {
+      "id": "a109bb85-e8cf-4081-8ea2-0cfe323bc71a",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "anime"
+    }, {
+      "id": "627494d9-3c7b-48f3-9c8a-798eb8f59d17",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1341c2bc-de0d-40cb-a27d-52ebbd970b80",
+      "comment": "",
+      "command": "type",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": "one piece"
+    }, {
+      "id": "9a925ae6-e172-4889-8134-68e605425acb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-magnifying-glass",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b863e1e7-84e2-4de0-ba60-32872d0c5461",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Search Anime - MyAnimeList.net",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "72ba4339-0613-4c32-b40b-08c9d59e8c5a",
+    "name": "3.8 Search - Searching with Manga Search Value option",
+    "commands": [{
+      "id": "f13c1674-e08b-41d5-80eb-190c38b6e770",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "215743e7-e56b-4390-8dbc-832c5ff53326",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03d53175-5982-4cc9-bdea-2c9d9c6a2165",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@placeholder='Search Anime, Manga, and more...']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a25b2e41-dcbf-47ef-80e8-7f0b20437559",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2532f811-9078-41ca-b182-b1160ac10378",
+      "comment": "",
+      "command": "select",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "label=Manga"
+    }, {
+      "id": "c83f4415-f218-46e1-ba9b-e472a9f055f0",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "manga"
+    }, {
+      "id": "da4b068e-f1c5-4af4-8bc8-302c0c106d6b",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20a7fb7b-0c4a-4530-8aec-87d616b73f26",
+      "comment": "",
+      "command": "type",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": "one piece"
+    }, {
+      "id": "3e72a9d3-754d-4313-b58b-3a88ac8b32ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-magnifying-glass",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16d9fabb-8c95-4973-8ca6-1a8146f34a84",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Search Manga - MyAnimeList.net",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8c36abdc-dfda-4309-ac52-f5385d029364",
+    "name": "3.9 Search - Searching with Characters Search Value option",
+    "commands": [{
+      "id": "a1250377-cf08-4bf1-bad5-cac3de70a561",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df13a18a-6746-49eb-928e-73ce71f98862",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88f7e71f-7a72-4cf6-a8fb-f4b8897451c5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@placeholder='Search Anime, Manga, and more...']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a33b31a1-3e6a-49d0-a369-a2e4214dfab7",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f050164-94dd-45f4-a985-12565847b381",
+      "comment": "",
+      "command": "select",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "label=Characters"
+    }, {
+      "id": "88f7ff91-2866-4b63-9640-20b71c78aa1f",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "character"
+    }, {
+      "id": "346297ac-3e76-4f98-ad71-5480c01213ed",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0077982-d9e5-4859-a715-f26ecf75bf94",
+      "comment": "",
+      "command": "type",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": "chopper"
+    }, {
+      "id": "ad9be238-7190-4935-902d-7a7b11e9e111",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-magnifying-glass",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2bfef3c-55fc-410a-b65a-ee33c54c2ab1",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Search Characters - MyAnimeList.net",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fa29cc57-4b37-4d86-ae23-f75dfe7b0ff3",
+    "name": "3.10 Search - Searching with People Search Value option",
+    "commands": [{
+      "id": "ff1a6110-0397-48d8-a1a6-b1382a31a193",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6de3231-1b8a-4f08-9533-39e30834aa03",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e514a9f-0710-460d-9732-63de2a90c067",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@placeholder='Search Anime, Manga, and more...']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b34f17e-85ba-49e1-b362-49c4c613d007",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d526f64-e638-47a6-ad2e-19c834b71802",
+      "comment": "",
+      "command": "select",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "label=People"
+    }, {
+      "id": "e227cce8-ad16-472c-88c1-f939118cdeed",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "person"
+    }, {
+      "id": "b24db897-be9c-4a8d-aa51-bb07629d1387",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99ff5823-d8f6-4699-9015-fb28b96ad7cd",
+      "comment": "",
+      "command": "type",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": "yamada"
+    }, {
+      "id": "78b2b276-0ec5-4ec2-b9b1-172b6ce65636",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-magnifying-glass",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "751e0238-290a-433f-b48a-f6df06eb1d97",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Search People - MyAnimeList.net",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b3471381-192f-41ae-9ebc-701e5c25681a",
+    "name": "3.11 Search - Searching with Companies Search Value option",
+    "commands": [{
+      "id": "88145724-5b9c-4367-9036-5e27fda34fba",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e6450e8-b662-4e0d-b980-32c738ff6f34",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50f6e6d4-694d-4b53-92c0-bb4919b74a69",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@placeholder='Search Anime, Manga, and more...']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f415b786-30f2-4f88-bd0b-38a1bf58284a",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7cb99219-2f0c-4526-8ab6-e980b7438d5a",
+      "comment": "",
+      "command": "select",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "label=Companies"
+    }, {
+      "id": "14c201e1-5b80-4d5e-9ff4-c51df73de757",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "company"
+    }, {
+      "id": "9e29c9ea-005c-4249-a5c9-094ba50c5b29",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86f4a6f0-3f91-4b04-878b-4655561d8d72",
+      "comment": "",
+      "command": "type",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": "mappa"
+    }, {
+      "id": "ed9942d1-6388-4951-aae6-b3e2928fac31",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-magnifying-glass",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b05aceb3-014d-40da-aadd-c325f94963c1",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Company - MyAnimeList.net",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "13e4b484-0d86-4794-a21b-dbfe09f10c2a",
+    "name": "3.12 Search - Searching with Manga Store Search Value option",
+    "commands": [{
+      "id": "fd53c1d9-93ab-48ff-b17b-7ac544b8cf95",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e553b5c-8096-4d8c-9925-f9696e96d694",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4360c29f-bacb-4258-936c-b5080789a14a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@placeholder='Search Anime, Manga, and more...']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8f47a92-21dd-4ee9-aa34-e3b7941f02da",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1201391c-ebad-4202-abc2-60b1d16b8c33",
+      "comment": "",
+      "command": "select",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "label=Manga Store"
+    }, {
+      "id": "092f75ee-333d-4f18-aac5-b1b61bac806b",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "store"
+    }, {
+      "id": "4f3d25fd-c4c9-4d59-89bd-ced4eae8ac99",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8503c2ce-09f8-4f84-b938-94fc36e2dab9",
+      "comment": "",
+      "command": "type",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": "eiwa manga"
+    }, {
+      "id": "8182e8f9-d32b-4297-bd88-94d91d2ee0ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-magnifying-glass",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dca3738d-7959-4cc6-8c65-8241654e7655",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Manga Store - MyAnimeList.net",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "440372f7-c3a7-4209-8fcd-aaff92ac2509",
+    "name": "3.13 Search - Searching with News Search Value option",
+    "commands": [{
+      "id": "99916f3d-722c-4aa3-98e4-660934cbaa2a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1f8509c-a60f-4442-b8fd-c970c445d856",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac354e49-516e-4feb-bf68-7ba0bd0f7670",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@placeholder='Search Anime, Manga, and more...']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d994f61-960c-4697-b767-6d4dcb93a619",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b54759d5-b097-40cd-9b11-338cd8aaa869",
+      "comment": "",
+      "command": "select",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "label=News"
+    }, {
+      "id": "6c9ae132-228e-44f2-b6cc-f4fcf71223cd",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "news"
+    }, {
+      "id": "4de05736-2f91-47a4-a512-3c561af789b3",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbe5d6b0-7be0-4452-99cb-13ab149a85f3",
+      "comment": "",
+      "command": "type",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": "pv collection"
+    }, {
+      "id": "a98b4c57-4c8d-4eee-88c2-6f373f4742ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-magnifying-glass",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e2d74a9-3d1d-41e2-9350-949e5d09f8eb",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Anime & Manga News searched by \"pv collection\" - MyAnimeList.net",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ed04b3ce-3e15-4874-9de4-29e1451b6a9b",
+    "name": "3.14 Search - Searching with Featured Articles Search Value option",
+    "commands": [{
+      "id": "33c76b32-8761-40a9-b410-e239246caa23",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3317d4d1-b22a-4fdd-aaa7-620c78556048",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d711851e-a1e8-430d-9470-94786afd5d01",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@placeholder='Search Anime, Manga, and more...']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8c43d20-61ca-493a-b443-343fa3ebc596",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7ee4654-ba4c-43a4-8101-bf5cae6b6dae",
+      "comment": "",
+      "command": "select",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "label=Featured Articles"
+    }, {
+      "id": "eb29e11b-5899-48d8-8481-f8e715fd4f5d",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "featured"
+    }, {
+      "id": "f7719202-358c-4df0-bd83-655fbd0b167d",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5e65511-f193-4738-8f6c-01a372abe481",
+      "comment": "",
+      "command": "type",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": "wonder egg priority"
+    }, {
+      "id": "a3695aa8-4f98-4b6a-bba8-ff72bff94f17",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-magnifying-glass",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "834fe904-435e-4d1c-8605-41c172adc204",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Featured Articles searched by \"wonder egg priority\" - MyAnimeList.net",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4d29606d-2db9-49f6-ba6f-49846b2a2353",
+    "name": "3.15 Search - Searching with Forum Search Value option",
+    "commands": [{
+      "id": "4165f4d1-6c92-42de-accd-e3e84b01be62",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40fe82eb-c914-4e1c-a68f-9c17c7acc4eb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d7742a8-7697-4d2d-8ccf-635c34e71ea9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@placeholder='Search Anime, Manga, and more...']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75b1411a-adf0-4ac5-a6fe-8fe0a9f32670",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7dd6dc5-3494-462d-b674-4d57baff3a11",
+      "comment": "",
+      "command": "select",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "label=Forum"
+    }, {
+      "id": "4d178282-347f-43a7-a008-ccf9e0ad064b",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "forum"
+    }, {
+      "id": "5ef90745-2b79-4cb7-8fc9-e556f3fac318",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93a00c33-b823-4860-80c9-80b85d2b3fd0",
+      "comment": "",
+      "command": "type",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": "bocchi the rock"
+    }, {
+      "id": "8fb19469-31c2-4675-a76f-a196422ef664",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-magnifying-glass",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0bd4ce9b-ec92-4212-b84f-538eabd9bf34",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Search - Forums - MyAnimeList.net",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d8f83567-80ff-4a0c-970d-74471f48ce25",
+    "name": "3.16 Search - Searching with Clubs Search Value option",
+    "commands": [{
+      "id": "b0a29006-07cf-4b71-b114-490529eb4c0f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ddbf388-b5f5-4c2a-8ffe-5b030d174b90",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30a9d140-cbc8-4275-ae84-cfbd3508ba4d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@placeholder='Search Anime, Manga, and more...']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41cf1059-86dd-4731-a9e2-2f1353a145a0",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "938dea8a-2407-410a-8c41-a64567d285ea",
+      "comment": "",
+      "command": "select",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "label=Clubs"
+    }, {
+      "id": "c5d347d6-910d-41f0-a942-bd5408983966",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "club"
+    }, {
+      "id": "acc790dc-8b26-4def-bcfb-6ca63b8ede5c",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cddcd096-cd95-4cb0-bb0c-ba980178fbdc",
+      "comment": "",
+      "command": "type",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": "j rock"
+    }, {
+      "id": "326e49b0-fbdd-4af3-af6b-c5fd0a9de1e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-magnifying-glass",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51faed7e-ac59-4c58-b164-29ef7cee70e1",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Search Clubs - MyAnimeList.net",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "613a979b-6119-4ee0-ac33-322778823ece",
+    "name": "3.17 Search - Searching with Users Search Value option",
+    "commands": [{
+      "id": "8c79793b-5942-4343-b6ff-3f495ab086ff",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc1cc42e-ee8d-4ba4-bd5b-9753d67fc63e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01180824-1f19-4f67-9008-2996a159b426",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@placeholder='Search Anime, Manga, and more...']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db0a2760-6449-4030-a257-54c5eeef89e6",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55c2813d-945a-4e2e-b1c8-a61c8b77cf64",
+      "comment": "",
+      "command": "select",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "label=Users"
+    }, {
+      "id": "645d98c7-a364-4d80-b369-f81928fd6d7e",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=topSearchValue",
+      "targets": [],
+      "value": "user"
+    }, {
+      "id": "c215c043-cd32-4114-8915-09d2d518eefa",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4850f7b-2c89-45b2-b73a-9ca530d9c614",
+      "comment": "",
+      "command": "type",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": "frances"
+    }, {
+      "id": "7733fa86-da66-4fef-a5a9-e1814de1b529",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-magnifying-glass",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b665ce1-3479-4909-9ab1-894ec1463c92",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Users - MyAnimeList.net",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1c9380b3-6b25-41c5-899e-ea0dcf218835",
+    "name": "3.18 Search - Search with Enter Key",
+    "commands": [{
+      "id": "09322db5-c2cf-410c-aa56-2a04dcefc98f",
+      "comment": "",
+      "command": "open",
+      "target": "https://myanimelist.net/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2de7714-0a95-4d5b-82e5-6579ad908fdc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c1b7abe-437c-4a15-8218-9b540e6b1ab1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@placeholder='Search Anime, Manga, and more...']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c2d7942-c684-49cf-a8e1-d0b2e4fd09cb",
+      "comment": "",
+      "command": "click",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b79da82-0c98-49a7-b1e3-cd539537d178",
+      "comment": "",
+      "command": "type",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": "jujutsu kaisen"
+    }, {
+      "id": "4f3626a0-7f38-455e-b196-202b512d7236",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=topSearchText",
+      "targets": [],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "4c88b578-4b18-47cc-9ce2-150211a4b17c",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Search All - MyAnimeList.net",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1cabc391-7682-49ba-8d1c-8068b6878231",
+    "name": "2.4 Login -  Valid Username Empty Password",
+    "commands": [{
+      "id": "a0bf7d8b-86f4-4fbd-8387-0ca0431ae33f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6825a38-9182-47be-b5a7-f092ead9f829",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1de0ba3-c4e1-43db-9e2d-094e8ed22981",
+      "comment": "",
+      "command": "click",
+      "target": "id=malLogin",
+      "targets": [
+        ["id=malLogin", "id"],
+        ["linkText=Login", "linkText"],
+        ["css=.header-menu-login > #malLogin", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[@id='malLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/login.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1dbe5d6-9f71-4c31-b0f7-50c7fe6efa7a",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginUserName",
+      "targets": [
+        ["id=loginUserName", "id"],
+        ["name=user_name", "name"],
+        ["css=#loginUserName", "css:finder"],
+        ["xpath=//input[@id='loginUserName']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ec100d9-5ac7-4a79-b56f-e5daf4e14623",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginUserName",
+      "targets": [
+        ["id=loginUserName", "id"],
+        ["name=user_name", "name"],
+        ["css=#loginUserName", "css:finder"],
+        ["xpath=//input[@id='loginUserName']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "fenderyamaha"
+    }, {
+      "id": "e1759290-31d5-4b68-bab8-4a6c014592b1",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-password",
+      "targets": [
+        ["id=login-password", "id"],
+        ["name=password", "name"],
+        ["css=#login-password", "css:finder"],
+        ["xpath=//input[@id='login-password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91f7e8f0-f94c-412b-8f92-227751047e4a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='Login']",
+      "targets": [
+        ["css=.btn-recaptcha-submit", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[6]/input", "xpath:idRelative"],
+        ["xpath=//p[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d95c68a0-19ce-4aaf-b81a-36010f42a686",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.badresult",
+      "targets": [],
+      "value": "Your username or password is incorrect."
+    }]
+  }, {
+    "id": "12fc8f4d-891c-4e66-8de9-9838cc9e6203",
+    "name": "2.5 Login -  Invalid Username Valid Password",
+    "commands": [{
+      "id": "1ae98b15-5045-4ef0-bb8d-89d41a76ef5a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b441b5e6-3172-4cfa-b5f8-5957a6637c55",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbebbe94-bebb-4b83-b77c-a0560a43f1c1",
+      "comment": "",
+      "command": "click",
+      "target": "id=malLogin",
+      "targets": [
+        ["id=malLogin", "id"],
+        ["linkText=Login", "linkText"],
+        ["css=.header-menu-login > #malLogin", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[@id='malLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/login.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e54496d-1d29-4018-8779-49b8b8df6465",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginUserName",
+      "targets": [
+        ["id=loginUserName", "id"],
+        ["name=user_name", "name"],
+        ["css=#loginUserName", "css:finder"],
+        ["xpath=//input[@id='loginUserName']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "075b3d31-4260-433c-bfbc-e09ac8906642",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginUserName",
+      "targets": [
+        ["id=loginUserName", "id"],
+        ["name=user_name", "name"],
+        ["css=#loginUserName", "css:finder"],
+        ["xpath=//input[@id='loginUserName']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "fender123!@#"
+    }, {
+      "id": "3023852e-ec25-4fd8-8715-2cb00fa78475",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-password",
+      "targets": [
+        ["id=login-password", "id"],
+        ["name=password", "name"],
+        ["css=#login-password", "css:finder"],
+        ["xpath=//input[@id='login-password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f624500-e1ee-47b0-bf34-b44cd6e6ee8a",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-password",
+      "targets": [
+        ["id=login-password", "id"],
+        ["name=password", "name"],
+        ["css=#login-password", "css:finder"],
+        ["xpath=//input[@id='login-password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "Forever21"
+    }, {
+      "id": "3b99882e-afc6-448b-8cff-f5f68e022fe9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='Login']",
+      "targets": [
+        ["css=.btn-recaptcha-submit", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[6]/input", "xpath:idRelative"],
+        ["xpath=//p[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3030ee5-794e-49f8-93ab-5dd58531b15a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.badresult",
+      "targets": [],
+      "value": "Your username or password is incorrect."
+    }]
+  }, {
+    "id": "a7e64d64-0dd7-48c0-b606-fb787bda056a",
+    "name": "2.6 Login -  Empty Username Valid Password",
+    "commands": [{
+      "id": "eaacbf79-36d0-4b13-a009-e806854cf9d0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27b7cb4a-db0c-40be-96dd-d6eeda5bc854",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86fed8ae-25f5-43e0-9b68-81116cbdd534",
+      "comment": "",
+      "command": "click",
+      "target": "id=malLogin",
+      "targets": [
+        ["id=malLogin", "id"],
+        ["linkText=Login", "linkText"],
+        ["css=.header-menu-login > #malLogin", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[@id='malLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/login.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9d40de3-48ee-47c7-bf70-3a66559faabc",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginUserName",
+      "targets": [
+        ["id=loginUserName", "id"],
+        ["name=user_name", "name"],
+        ["css=#loginUserName", "css:finder"],
+        ["xpath=//input[@id='loginUserName']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "592fb984-dede-4dfc-a45d-050dfb574998",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-password",
+      "targets": [
+        ["id=login-password", "id"],
+        ["name=password", "name"],
+        ["css=#login-password", "css:finder"],
+        ["xpath=//input[@id='login-password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44c9ded3-1223-4fc8-8d58-da17281f02e6",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-password",
+      "targets": [
+        ["id=loginUserName", "id"],
+        ["name=user_name", "name"],
+        ["css=#loginUserName", "css:finder"],
+        ["xpath=//input[@id='loginUserName']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "Forever21"
+    }, {
+      "id": "9538e641-bf7a-411f-a7e7-cc5e5c53694e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='Login']",
+      "targets": [
+        ["css=.btn-recaptcha-submit", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[6]/input", "xpath:idRelative"],
+        ["xpath=//p[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d0bf167-cffa-47c7-878c-35d284cd1adb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.badresult",
+      "targets": [],
+      "value": "Your username or password is incorrect."
+    }]
+  }, {
+    "id": "c2ec661b-070f-48a4-9b18-7ab1133b87cc",
+    "name": "2.2 Login - Empty Value Username & Password",
+    "commands": [{
+      "id": "837f1f77-4299-4374-bd52-8654aff74733",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f491b49-fd26-4193-a8ee-7892fec5b862",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40821cbf-17b1-4180-9643-1aeedea10c54",
+      "comment": "",
+      "command": "click",
+      "target": "id=malLogin",
+      "targets": [
+        ["id=malLogin", "id"],
+        ["linkText=Login", "linkText"],
+        ["css=.header-menu-login > #malLogin", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[@id='malLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/login.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7901500-e2bf-4f29-a9c8-0b87a9b5690b",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginUserName",
+      "targets": [
+        ["id=loginUserName", "id"],
+        ["name=user_name", "name"],
+        ["css=#loginUserName", "css:finder"],
+        ["xpath=//input[@id='loginUserName']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fd845f1-9103-4d0b-8d47-5564da29da98",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-password",
+      "targets": [
+        ["id=login-password", "id"],
+        ["name=password", "name"],
+        ["css=#login-password", "css:finder"],
+        ["xpath=//input[@id='login-password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3f67b88-08c7-4ea5-a24b-30e3c038c738",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='Login']",
+      "targets": [
+        ["css=.btn-recaptcha-submit", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[6]/input", "xpath:idRelative"],
+        ["xpath=//p[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35af24fa-3352-4bdf-ae63-edb9290bff65",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.badresult",
+      "targets": [],
+      "value": "Your username or password is incorrect."
+    }]
+  }, {
+    "id": "8fa55c92-3215-4621-995c-1b7c76ea00c9",
+    "name": "2.9 Login - Password Encrypted",
+    "commands": [{
+      "id": "3afb7aa4-9ff8-4c1a-83ed-7d812fafe821",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f89c37d-87e5-4fd0-9cb4-e4482c5666f7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92cd2fcc-f7fc-4f71-a6ea-5a93d8125016",
+      "comment": "",
+      "command": "click",
+      "target": "id=headerSmall",
+      "targets": [
+        ["id=headerSmall", "id"],
+        ["css=#headerSmall", "css:finder"],
+        ["xpath=//div[@id='headerSmall']", "xpath:attributes"],
+        ["xpath=//div[@id='myanimelist']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "947a46de-a2f2-4163-a544-cef4a5d4ed0e",
+      "comment": "",
+      "command": "click",
+      "target": "id=malLogin",
+      "targets": [
+        ["id=malLogin", "id"],
+        ["linkText=Login", "linkText"],
+        ["css=.header-menu-login > #malLogin", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[@id='malLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/login.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "81d5c096-c9c5-4f15-b718-c19b61a435f1",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-password",
+      "targets": [
+        ["id=login-password", "id"],
+        ["name=password", "name"],
+        ["css=#login-password", "css:finder"],
+        ["xpath=//input[@id='login-password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af7695c1-04a5-485b-b374-4a3e8588775f",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-password",
+      "targets": [
+        ["id=login-password", "id"],
+        ["name=password", "name"],
+        ["css=#login-password", "css:finder"],
+        ["xpath=//input[@id='login-password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "Forever21"
+    }, {
+      "id": "8732e47f-6d42-40a1-aa3a-43e8bded356e",
+      "comment": "",
+      "command": "click",
+      "target": "name=loginForm",
+      "targets": [
+        ["name=loginForm", "name"],
+        ["css=.recaptcha-form", "css:finder"],
+        ["xpath=//form[@name='loginForm']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form", "xpath:idRelative"],
+        ["xpath=//td/form", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3ea8236b-01d5-40d0-9bf0-f0cf3f2d147d",
+    "name": "2.10 Login - Password Encrypted with Show Password Checkbox",
+    "commands": [{
+      "id": "41db176f-b71a-41cf-8a28-add465d1c372",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fbb1726e-ce3f-4e56-92d1-dd3d18eae449",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d29219d-1f10-4123-8180-c87280b46e21",
+      "comment": "",
+      "command": "click",
+      "target": "id=malLogin",
+      "targets": [
+        ["id=malLogin", "id"],
+        ["linkText=Login", "linkText"],
+        ["css=.header-menu-login > #malLogin", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[@id='malLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/login.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "795f5b43-63d3-423f-b259-fd53bebc067b",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-password",
+      "targets": [
+        ["id=login-password", "id"],
+        ["name=password", "name"],
+        ["css=#login-password", "css:finder"],
+        ["xpath=//input[@id='login-password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f394062c-4563-44e8-9d9d-fdb4457cf571",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-password",
+      "targets": [
+        ["id=login-password", "id"],
+        ["name=password", "name"],
+        ["css=#login-password", "css:finder"],
+        ["xpath=//input[@id='login-password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "Forever21"
+    }, {
+      "id": "e4b0b262-bc60-45d4-9932-7f3a8ba52473",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pt12:nth-child(5)",
+      "targets": [
+        ["css=.pt12:nth-child(5)", "css:finder"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[5]", "xpath:idRelative"],
+        ["xpath=//p[5]", "xpath:position"],
+        ["xpath=//p[contains(.,' Stay logged in?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dda968a9-ece5-4104-bc6f-744336b81501",
+      "comment": "",
+      "command": "click",
+      "target": "id=show-password",
+      "targets": [
+        ["id=show-password", "id"],
+        ["name=show_password", "name"],
+        ["css=#show-password", "css:finder"],
+        ["xpath=//input[@id='show-password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "453264f2-d60d-43bb-bf2e-d0cd6a52ac46",
+      "comment": "",
+      "command": "click",
+      "target": "id=show-password",
+      "targets": [
+        ["id=show-password", "id"],
+        ["name=show_password", "name"],
+        ["css=#show-password", "css:finder"],
+        ["xpath=//input[@id='show-password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61c9f3ea-2aa4-4bcf-b9ab-5c4ae40990e5",
+      "comment": "",
+      "command": "click",
+      "target": "id=show-password",
+      "targets": [
+        ["id=show-password", "id"],
+        ["name=show_password", "name"],
+        ["css=#show-password", "css:finder"],
+        ["xpath=//input[@id='show-password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "837b22dd-3ec0-471e-aeee-8718527ed1b4",
+      "comment": "",
+      "command": "click",
+      "target": "id=show-password",
+      "targets": [
+        ["id=show-password", "id"],
+        ["name=show_password", "name"],
+        ["css=#show-password", "css:finder"],
+        ["xpath=//input[@id='show-password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8259970-4bb2-4ea5-b252-edc185ba9147",
+      "comment": "",
+      "command": "click",
+      "target": "id=show-password",
+      "targets": [
+        ["id=show-password", "id"],
+        ["name=show_password", "name"],
+        ["css=#show-password", "css:finder"],
+        ["xpath=//input[@id='show-password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "60250f33-e8b4-46cf-a6d0-ff08a1c3575d",
+    "name": "5.1 Logout - Logout Not Display Before Login",
+    "commands": [{
+      "id": "d62a8a8b-ed88-45d1-8977-9695089a33af",
+      "comment": "",
+      "command": "open",
+      "target": "https://myanimelist.net/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d92aaf4d-16d0-48ec-ade7-a3cbedcfe080",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "00721daa-f98c-412a-aa69-77a5282b6914",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "linkText=Logout",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "249dc2c7-557d-47f5-affb-2638f6cc0d9f",
+    "name": "5.2 Logout - Logout Display on User Select option After Login",
+    "commands": [{
+      "id": "0b87519c-d0e0-40fb-b6d1-401525591478",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e73892b-46cb-422b-851e-876a5a1f0302",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2421bfa8-ee51-4d5d-86e8-461aa8ce7c59",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=TestRaiden",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27078a2b-c37e-4885-b92e-8d6e289cd902",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=TestRaiden",
+      "targets": [
+        ["linkText=fenderyamada", "linkText"],
+        ["css=.header-profile-link", "css:finder"],
+        ["xpath=//a[contains(text(),'fenderyamada')]", "xpath:link"],
+        ["xpath=//div[@id='header-menu']/div[8]/a", "xpath:idRelative"],
+        ["xpath=//div[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'fenderyamada')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2119fa57-fd2b-444b-b28a-5894d6c865d6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=form > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//a[@onclick='$(this).parent().submit();']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div[8]/div/ul/li[11]/form/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//form/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2937860-c0a8-4f1c-9c87-85625b9e4e5c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=form > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//a[@onclick='$(this).parent().submit();']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div[8]/div/ul/li[11]/form/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//form/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e8fb4415-ce38-4e4f-ae67-886f15ad6667",
+    "name": "4.1 Account Setting - Change Password with Show Password",
+    "commands": [{
+      "id": "7ab2ce2d-97cd-4c1d-ad30-8798f90453c7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4ecde34-7f20-46d3-9e26-abd6acebf4a1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f04efa4-74da-4a3f-b791-a944d7cbde5e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=TestRaiden",
+      "targets": [
+        ["linkText=fenderyamada", "linkText"],
+        ["css=.header-profile-link", "css:finder"],
+        ["xpath=//a[contains(text(),'fenderyamada')]", "xpath:link"],
+        ["xpath=//div[@id='header-menu']/div[8]/a", "xpath:idRelative"],
+        ["xpath=//div[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'fenderyamada')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "58668348-d633-4ba0-b02c-e4dbbf38a263",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Account Settings",
+      "targets": [
+        ["linkText=Account Settings", "linkText"],
+        ["css=.header-menu-dropdown li:nth-child(9) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Account Settings')]", "xpath:link"],
+        ["xpath=//div[@id='header-menu']/div[8]/div/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/editprofile.php?go=myoptions')]", "xpath:href"],
+        ["xpath=//li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Account Settings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "73e18043-b2ce-4611-a601-61a01c1cfbe0",
+      "comment": "",
+      "command": "click",
+      "target": "id=new-password",
+      "targets": [
+        ["id=new-password", "id"],
+        ["name=new_password", "name"],
+        ["css=#new-password", "css:finder"],
+        ["xpath=//input[@id='new-password']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[4]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2843275-9182-4b91-8eca-6c2a2e5af324",
+      "comment": "",
+      "command": "type",
+      "target": "id=new-password",
+      "targets": [
+        ["id=new-password", "id"],
+        ["name=new_password", "name"],
+        ["css=#new-password", "css:finder"],
+        ["xpath=//input[@id='new-password']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[4]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Password123"
+    }, {
+      "id": "7d3af320-084b-4934-8878-172055a54edb",
+      "comment": "",
+      "command": "click",
+      "target": "id=confirm-new-password",
+      "targets": [
+        ["id=confirm-new-password", "id"],
+        ["name=confirm_new_password", "name"],
+        ["css=#confirm-new-password", "css:finder"],
+        ["xpath=//input[@id='confirm-new-password']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[4]/div[2]/form/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37b247dc-6fd2-42af-85e0-a4b7db766bc8",
+      "comment": "",
+      "command": "type",
+      "target": "id=confirm-new-password",
+      "targets": [
+        ["id=confirm-new-password", "id"],
+        ["name=confirm_new_password", "name"],
+        ["css=#confirm-new-password", "css:finder"],
+        ["xpath=//input[@id='confirm-new-password']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[4]/div[2]/form/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Password123"
+    }, {
+      "id": "5ceb0ffa-3830-4ad5-a191-3d152aa3fe96",
+      "comment": "",
+      "command": "click",
+      "target": "id=show-password",
+      "targets": [
+        ["id=show-password", "id"],
+        ["css=#show-password", "css:finder"],
+        ["xpath=//input[@id='show-password']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[4]/div[2]/form/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ccaddf8-59c3-48e4-afce-ada3be52381c",
+      "comment": "",
+      "command": "click",
+      "target": "id=show-password",
+      "targets": [
+        ["id=show-password", "id"],
+        ["css=#show-password", "css:finder"],
+        ["xpath=//input[@id='show-password']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[4]/div[2]/form/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b52da054-e96c-46cf-b7f1-08cf157ddd51",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-container:nth-child(4) .inputButton",
+      "targets": [
+        ["css=.info-container:nth-child(4) .inputButton", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[4]/div[2]/form/div[2]/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0a157a0-0f3f-44c4-a714-99d1e6df98c9",
+      "comment": "",
+      "command": "//click",
+      "target": "id=current-password",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06ecd027-6e70-4ae9-8ad5-6212cadaa6a9",
+      "comment": "",
+      "command": "//type",
+      "target": "id=current-password",
+      "targets": [],
+      "value": "Forever21"
+    }, {
+      "id": "547d7236-5084-4ea3-86fc-e40b23a95359",
+      "comment": "",
+      "command": "//click",
+      "target": "id=show-password",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80092ae4-94c1-436c-bffc-12f4dc6a843b",
+      "comment": "",
+      "command": "//click",
+      "target": "id=show-password",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e34548a-373a-4901-a6ad-ee1d591158ce",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.inputButton",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24ab9b94-0b93-403c-a934-7ef47cb69802",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.goodresult",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe5bf908-a400-4fac-8dac-46941ff17d9f",
+      "comment": "",
+      "command": "//assertText",
+      "target": "css=.goodresult",
+      "targets": [],
+      "value": "Successfully changed your password."
+    }]
+  }, {
+    "id": "84a9cf29-8540-455b-976b-83bad402b7af",
+    "name": "4.2 Account Setting - Change Email",
+    "commands": [{
+      "id": "ac930a64-f91f-46d2-9683-c6149b48a602",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0577b3e1-1aa9-42c5-83ef-b3be7b2d02f5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "814395e2-c17b-432d-b0fc-d8f536374221",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=TestRaiden",
+      "targets": [
+        ["linkText=fenderyamada", "linkText"],
+        ["css=.header-profile-link", "css:finder"],
+        ["xpath=//a[contains(text(),'fenderyamada')]", "xpath:link"],
+        ["xpath=//div[@id='header-menu']/div[8]/a", "xpath:idRelative"],
+        ["xpath=//div[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'fenderyamada')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "20a48af0-c9d8-45fe-8fce-aa7a6e44f386",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Account Settings",
+      "targets": [
+        ["linkText=Account Settings", "linkText"],
+        ["css=.header-menu-dropdown li:nth-child(9) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Account Settings')]", "xpath:link"],
+        ["xpath=//div[@id='header-menu']/div[8]/div/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/editprofile.php?go=myoptions')]", "xpath:href"],
+        ["xpath=//li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Account Settings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "560c9c3e-54a6-47be-b83c-b2bb126b005b",
+      "comment": "",
+      "command": "click",
+      "target": "id=new-email",
+      "targets": [
+        ["id=new-email", "id"],
+        ["name=new_email", "name"],
+        ["css=#new-email", "css:finder"],
+        ["xpath=//input[@id='new-email']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[5]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d988f8df-f42d-441d-b1c9-20bff6f75f53",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-container:nth-child(5)",
+      "targets": [
+        ["css=.info-container:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='content']/div[5]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b32459a-15d8-4df4-a26e-e1edb54e3065",
+      "comment": "",
+      "command": "click",
+      "target": "id=new-email",
+      "targets": [
+        ["id=new-email", "id"],
+        ["name=new_email", "name"],
+        ["css=#new-email", "css:finder"],
+        ["xpath=//input[@id='new-email']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[5]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67c28461-6748-47c3-99ab-d1403a23d4d4",
+      "comment": "",
+      "command": "type",
+      "target": "id=new-email",
+      "targets": [
+        ["id=new-email", "id"],
+        ["name=new_email", "name"],
+        ["css=#new-email", "css:finder"],
+        ["xpath=//input[@id='new-email']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[5]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/form/div/div/input", "xpath:position"]
+      ],
+      "value": "rizisnoigsma@gmail.com"
+    }, {
+      "id": "81933c8a-bcd4-407b-831b-0fa37716c2d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-container:nth-child(5) .pt16",
+      "targets": [
+        ["css=.info-container:nth-child(5) .pt16", "css:finder"],
+        ["xpath=//div[@id='content']/div[5]/div[2]/form/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/form/div[2]/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d779fa90-7b0f-4907-93b0-3a0c1ae72a2f",
+      "comment": "",
+      "command": "click",
+      "target": "id=new-email",
+      "targets": [
+        ["id=new-email", "id"],
+        ["name=new_email", "name"],
+        ["css=#new-email", "css:finder"],
+        ["xpath=//input[@id='new-email']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[5]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "689d80c5-d164-4d33-885e-b9cca6cbcccc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-container:nth-child(5) .inputButton",
+      "targets": [
+        ["css=.info-container:nth-child(5) .inputButton", "css:finder"],
+        ["xpath=(//input[@value='Submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[5]/div[2]/form/div[2]/p/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/form/div[2]/p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdf37993-0de2-463b-8cee-c65c57f2707b",
+      "comment": "",
+      "command": "//click",
+      "target": "id=current-password",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "510e37e0-a872-4647-90d7-9bcb8db21b41",
+      "comment": "",
+      "command": "//type",
+      "target": "id=current-password",
+      "targets": [],
+      "value": "Password123"
+    }, {
+      "id": "aa517b07-5ef9-44a5-b99d-fcb73c55aa1e",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.inputButton",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2632fe2f-b627-4153-b540-646caa688296",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.goodresult",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13d07952-20de-4387-9e2c-81bd275a7aa8",
+      "comment": "",
+      "command": "//assertText",
+      "target": "css=.goodresult",
+      "targets": [],
+      "value": "A verification email has been sent to your updated email address."
+    }]
+  }, {
+    "id": "568a6b6e-a3ff-4d47-a33d-89dd65ff91ef",
+    "name": "4.3 Account Setting - Change Username",
+    "commands": [{
+      "id": "4c29a560-4d60-4d61-ae23-df62d7164e62",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fab7716b-dfef-49cf-b0f0-96e33726b13d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f1d84b0-5f8b-45c0-b8b2-8e76ca184224",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=TestRaiden",
+      "targets": [
+        ["linkText=SnowRebels", "linkText"],
+        ["css=.header-profile-link", "css:finder"],
+        ["xpath=//a[contains(text(),'SnowRebels')]", "xpath:link"],
+        ["xpath=//div[@id='header-menu']/div[8]/a", "xpath:idRelative"],
+        ["xpath=//div[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'SnowRebels')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f7b1a6f-7930-4535-9ab8-a91665b52c5c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Account Settings",
+      "targets": [
+        ["linkText=Account Settings", "linkText"],
+        ["css=.header-menu-dropdown li:nth-child(9) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Account Settings')]", "xpath:link"],
+        ["xpath=//div[@id='header-menu']/div[8]/div/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/editprofile.php?go=myoptions')]", "xpath:href"],
+        ["xpath=//li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Account Settings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e9a4197-44fc-4894-87a1-f187c7798b71",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-container:nth-child(6)",
+      "targets": [
+        ["css=.info-container:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='content']/div[6]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7d39d7e-ae5b-4f80-b8a5-42e57e515cf3",
+      "comment": "",
+      "command": "type",
+      "target": "name=new_user_name",
+      "targets": [
+        ["name=new_user_name", "name"],
+        ["css=.password_checker_user_name", "css:finder"],
+        ["xpath=//input[@name='new_user_name']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[6]/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/form/div/div/input", "xpath:position"]
+      ],
+      "value": "TestFender123"
+    }, {
+      "id": "a317144e-7fc8-442d-b801-0cfd3c0774ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info-container:nth-child(6) .inputButton",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0fdd81c2-9096-4f1e-ae37-4e3a970c8d38",
+      "comment": "",
+      "command": "//click",
+      "target": "id=current-password",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b529268-5906-4fe9-a04f-20b77a25609b",
+      "comment": "",
+      "command": "//type",
+      "target": "id=current-password",
+      "targets": [],
+      "value": "Forever21"
+    }, {
+      "id": "1bdb7d01-21ff-483f-8cf2-de3d7460ad4d",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.inputButton",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "631d4098-2acf-474f-be4d-f5ac843aa360",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.goodresult",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c9ad77a-26f6-485b-9f85-4dc2412f024e",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.goodresult",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75d74f08-c80d-4382-8cd4-623575df5178",
+      "comment": "",
+      "command": "//assertText",
+      "target": "css=.goodresult",
+      "targets": [],
+      "value": "Successfully changed your username.\\nDon't forget to change ALL websites and signatures that link to your old username!"
+    }]
+  }],
+  "suites": [{
+    "id": "b9274590-d0bb-4951-addd-ea0c1ac147cf",
+    "name": "1.0 Sign Up",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["43d46987-6853-491c-a5af-321ac42e3315", "0abb9be5-7bf2-4920-a40c-f846d7e0ec22", "369032ca-b91c-4eb3-802a-6e7f78fa3263", "9ef5a806-2f95-43c3-ae96-b2e73dacd65b", "b2a8c8e6-6634-4358-a74e-70fc6655ec8e", "ad4f22eb-46c3-443a-b2ac-1759261e9933", "e8fb378c-17ca-4e23-aeb7-eb115ff1da19", "83824f52-1e58-4e9b-a56d-4d00e9c70ba2", "997a8a55-2c2c-458c-9d7e-826fb4b27053", "820e57f0-2a11-4538-a7c3-45a39b66d256", "f2ab0935-04ef-4d28-bfbc-04b1a51abe52", "f16801b1-5c66-4b4e-a904-5aaabf6cad98", "7bf4a906-b173-4245-b0a6-4a5f13e6354f", "adaddd23-7c12-4ad6-b797-30cda62c456e", "ac12a265-3e83-4264-979e-203089f7bddc", "27eb5ad9-43ba-4150-9526-6e659f321241"]
+  }, {
+    "id": "e57a6511-9137-47b8-9fff-9896758860c8",
+    "name": "2.0 Login",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b2ad3d74-52c3-456b-8501-28a8fe922fe7", "c2ec661b-070f-48a4-9b18-7ab1133b87cc", "09723d2b-92d9-4382-86c8-fef0d2dd4754", "1cabc391-7682-49ba-8d1c-8068b6878231", "12fc8f4d-891c-4e66-8de9-9838cc9e6203", "a7e64d64-0dd7-48c0-b606-fb787bda056a", "e122e18e-b15c-4b6a-981c-69a8d3e998da", "3286e280-d7eb-4502-b78b-283235f7bb78", "8fa55c92-3215-4621-995c-1b7c76ea00c9", "3ea8236b-01d5-40d0-9bf0-f0cf3f2d147d"]
+  }, {
+    "id": "37f2ac8d-c8b1-4c08-8bfe-fee10a740c50",
+    "name": "3.0 Search",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e5a29bd3-0f36-4e38-a644-10e87ed748f8", "ac5fea1a-99d0-4354-a093-478e7142de35", "f2cbf0e0-c289-4ca6-b8a6-6f47afae92e6", "b666abe1-327f-40bb-a7f8-d4dd580e30a0", "a73a9301-a31d-42f9-a11f-b3256b200a7e", "05b243ee-5d0d-4094-88e6-99cffe555feb", "88c00ceb-aeb9-4e8a-a93a-30eb1131e347", "72ba4339-0613-4c32-b40b-08c9d59e8c5a", "8c36abdc-dfda-4309-ac52-f5385d029364", "fa29cc57-4b37-4d86-ae23-f75dfe7b0ff3", "b3471381-192f-41ae-9ebc-701e5c25681a", "13e4b484-0d86-4794-a21b-dbfe09f10c2a", "440372f7-c3a7-4209-8fcd-aaff92ac2509", "ed04b3ce-3e15-4874-9de4-29e1451b6a9b", "4d29606d-2db9-49f6-ba6f-49846b2a2353", "d8f83567-80ff-4a0c-970d-74471f48ce25", "613a979b-6119-4ee0-ac33-322778823ece", "1c9380b3-6b25-41c5-899e-ea0dcf218835"]
+  }, {
+    "id": "e26bedc6-e0b6-4ad5-826b-b5cadcb8be12",
+    "name": "5.0 Logout",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["60250f33-e8b4-46cf-a6d0-ff08a1c3575d", "249dc2c7-557d-47f5-affb-2638f6cc0d9f"]
+  }, {
+    "id": "e4b785ff-937b-4400-966e-10b2127798e1",
+    "name": "4.0 Account Settings",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e8fb4415-ce38-4e4f-ae67-886f15ad6667", "84a9cf29-8540-455b-976b-83bad402b7af", "568a6b6e-a3ff-4d47-a33d-89dd65ff91ef"]
+  }],
+  "urls": ["https://myanimelist.net/"],
+  "plugins": []
+}
